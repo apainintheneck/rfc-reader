@@ -14,7 +14,7 @@ module RfcReader
           This command downloads the plaintext version of RFCs from
           rfc-editor.org so that they can be read at the command line.
 
-          The most recent 15 RFCs are saved locally so that they can be
+          The last 100 downloaded RFCs are saved locally so that they can be
           read later on without the need for an internet connection.
 
         DESCRIPTION
