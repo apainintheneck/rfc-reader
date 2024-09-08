@@ -24,6 +24,9 @@ module RfcReader
     LIBRARY_CACHE_DIR = File.join(PROGRAM_CACHE_DIR, "library").freeze
     private_constant :LIBRARY_CACHE_DIR
 
+    # @param title [String] the RFC title
+    # @param url [String] the text file URL for the RFC
+    # @return [String] the RFC content
     def self.download_document(title:, url:)
       file_name = File.basename(url)
       file_path = File.join(LIBRARY_CACHE_DIR, file_name)
@@ -36,6 +39,10 @@ module RfcReader
       content
     end
 
+    # @param title [String] the RFC title
+    # @param url [String] the text file URL for the RFC
+    # @param path [String] the path to the local copy of the RFC
+    # @return [String] the RFC content
     def self.load_document(title:, url:, path:)
       content = File.read(path)
 
@@ -44,6 +51,14 @@ module RfcReader
       content
     end
 
+    # These are referenced later on by the `rfc-reader library` command.
+    #
+    # @example
+    #   [
+    #     { title: "My RFC", url: "www.my-rfc.com/my-rfc.txt", path: ".cache/rfc-reader/library/my-rfc.txt" },
+    #     ...
+    #   ]
+    # @return [Array<Hash<String, String>>] a list of RFC info hashes
     def self.catalog
       if File.exist?(LIBRARY_CACHE_LIST_PATH)
         content = File.read(LIBRARY_CACHE_LIST_PATH)
@@ -53,6 +68,12 @@ module RfcReader
       end
     end
 
+    # Adds the RFC to the beginning of the catalog and removes any existing entries.
+    # These are referenced later on by the `rfc-reader library` command.
+    #
+    # @param title [String] the RFC title
+    # @param url [String] the text file URL for the RFC
+    # @param path [String] the path to the local copy of the RFC
     def self.add_to_catalog(title:, url:, path:)
       list = catalog.reject do |rfc|
         title == rfc[:title] ||

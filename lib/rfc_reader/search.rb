@@ -8,11 +8,15 @@ module RfcReader
     RFC_SEARCH_URI = URI("https://www.rfc-editor.org/search/rfc_search_detail.php").freeze
     private_constant :RFC_SEARCH_URI
 
+    # @param term [String]
+    # @return [Hash<String, String>] from RFC title to text file url
     def self.search_by(term:)
       html = fetch_by(term: term)
       parse(html)
     end
 
+    # @param term [String]
+    # @return [String] the raw HTML of the search results for the given term
     def self.fetch_by(term:)
       Net::HTTP.post_form(RFC_SEARCH_URI, { combo_box: term }).body
     end
@@ -63,6 +67,9 @@ module RfcReader
     #       </tr>
     # ...
     # ```
+    #
+    # @param html [String] the HTML of the search results
+    # @return [Hash<String, String>] from RFC title to text file url
     def self.parse(html)
       # NOTE: The first element in the table is just some general search information. See example HTML above.
       Nokogiri::HTML(html).xpath("//div[@class='scrolltable']//table[@class='gridtable']//tr").drop(1).to_h do |tr_node|

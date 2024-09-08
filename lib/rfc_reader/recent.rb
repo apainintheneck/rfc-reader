@@ -8,11 +8,13 @@ module RfcReader
     RECENT_RFCS_RSS_URI = URI("https://www.rfc-editor.org/rfcrss.xml").freeze
     private_constant :RECENT_RFCS_RSS_URI
 
+    # @return [Hash<String, String>] from RFC title to text file url
     def self.list
       xml = fetch
       parse(xml)
     end
 
+    # @return [String] the raw XML from the recent RFCs RSS feed
     def self.fetch
       Net::HTTP.get(RECENT_RFCS_RSS_URI)
     end
@@ -30,6 +32,9 @@ module RfcReader
     #   </description>
     # </item>
     # ```
+    #
+    # @param xml [String] the XML of the recent RFCs RSS endpoint
+    # @return [Hash<String, String>] from RFC title to text file url
     def self.parse(xml)
       Nokogiri::XML(xml).xpath("//item").to_h do |item|
         item_hash = item.elements.to_h do |elem|

@@ -4,8 +4,10 @@ require "thor"
 
 module RfcReader
   class Command < Thor
+    # @return [Boolean]
     def self.exit_on_failure? = true
 
+    # @param command [String, nil]
     def help(command = nil)
       unless command
         puts <<~DESCRIPTION
@@ -30,6 +32,7 @@ module RfcReader
       Choose any RFC from the list that seems interesting and
       it will get downloaded so that you can read it in your terminal.
     LONGDESC
+    # @param term [String]
     def search(term)
       search_results = Search.search_by(term: term)
       title = Terminal.choose("Choose an RFC to read:", search_results.keys)
