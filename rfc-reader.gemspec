@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-require_relative "lib/rfc/reader/version"
+require_relative "lib/rfc_reader/version"
 
 Gem::Specification.new do |spec|
   spec.name = "rfc-reader"
-  spec.version = Rfc::Reader::VERSION
+  spec.version = RfcReader::VERSION
   spec.authors = ["Kevin Robell"]
   spec.email = ["apainintheneck@gmail.com"]
 
