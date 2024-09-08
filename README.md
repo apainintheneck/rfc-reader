@@ -1,4 +1,4 @@
-# Rfc::Reader
+# RfcReader
 
 TODO: Delete this and the text below, and describe your gem
 
