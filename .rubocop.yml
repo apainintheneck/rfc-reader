@@ -23,6 +23,7 @@ Layout/FirstHashElementLineBreak:
 Layout/LineLength:
   Enabled: true
   Max: 120
+  AllowedPatterns: ['\A *# '] # Allow long lines in comments
 
 Layout/MultilineMethodCallIndentation:
   Enabled: true
