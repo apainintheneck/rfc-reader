@@ -6,5 +6,6 @@ module RfcReader
   autoload :Command, "rfc_reader/command"
   autoload :Recent, "rfc_reader/recent"
   autoload :Search, "rfc_reader/search"
+  autoload :Terminal, "rfc_reader/terminal"
   autoload :Library, "rfc_reader/library"
 end
