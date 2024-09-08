@@ -1,0 +1,49 @@
+# frozen_string_literal: true
+
+require "net/http"
+require "nokogiri"
+
+module RfcReader
+  module Recent
+    RECENT_RFCS_RSS_URI = URI("https://www.rfc-editor.org/rfcrss.xml").freeze
+    private_constant :RECENT_RFCS_RSS_URI
+
+    def self.list
+      xml = fetch
+      parse(xml)
+    end
+
+    def self.fetch
+      Net::HTTP.get(RECENT_RFCS_RSS_URI)
+    end
+
+    # Example: XML fragment we're trying to parse title and link data from.
+    #
+    # ```xml
+    # <item>
+    #   <title>
+    #   RFC 9624: EVPN Broadcast, Unknown Unicast, or Multicast (BUM) Using Bit Index Explicit Replication (BIER)
+    #   </title>
+    #   <link>https://www.rfc-editor.org/info/rfc9624</link>
+    #   <description>
+    #   This document specifies protocols and procedures for forwarding Broadcast, Unknown Unicast, or Multicast (BUM) traffic of Ethernet VPNs (EVPNs) using Bit Index Explicit Replication (BIER).
+    #   </description>
+    # </item>
+    # ```
+    def self.parse(xml)
+      Nokogiri::XML(xml).xpath("//item").to_h do |item|
+        item_hash = item.elements.to_h do |elem|
+          [elem.name, elem.text]
+        end
+
+        # The link is to the webpage and not the plaintext document so we must convert it.
+        file_name = File.basename(item_hash["link"])
+
+        [
+          item_hash["title"],
+          "https://www.rfc-editor.org/rfc/#{file_name}.txt",
+        ]
+      end
+    end
+  end
+end
