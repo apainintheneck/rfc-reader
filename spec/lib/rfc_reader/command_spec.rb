@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 RSpec.describe RfcReader::Command do
-  describe "help" do
+  describe "#help" do
     it "matches default command usage" do
       expect { described_class.start }
         .to output(snapshot("command-help")).to_stdout
