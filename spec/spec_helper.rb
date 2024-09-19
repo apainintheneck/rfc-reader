@@ -2,6 +2,7 @@
 
 require "fileutils"
 require "json"
+require "open3"
 require "tmpdir"
 require "rfc_reader"
 require "rspec/snapshot"
@@ -115,6 +116,14 @@ RSpec.configure do |config|
   # Extra set up to make sure we don't overwrite the default XDG directory files.
   config.around(:each, :setup_xdg_dirs) do |example|
     Dir.mktmpdir("rfc-reader-tests-") do |temp_dir|
+      ENV["XDG_CACHE_HOME"] = temp_dir
+      example.run
+    end
+  end
+
+  # Online tests are not included in normal `rspec` runs locally and are mostly triggered on CI.
+  config.around(:each, :online) do |example|
+    Dir.mktmpdir("rfc-reader-online-tests-") do |temp_dir|
       ENV["XDG_CACHE_HOME"] = temp_dir
       example.run
     end

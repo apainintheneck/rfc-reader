@@ -53,6 +53,9 @@ Metrics/ModuleLength:
   Enabled: true
   CountAsOne: ['array', 'heredoc', 'method_call']
 
+RSpec/DescribeClass:
+  Enabled: false
+
 RSpec/ExampleLength:
   Enabled: false
 
