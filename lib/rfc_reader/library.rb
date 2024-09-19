@@ -9,30 +9,15 @@ module RfcReader
     MAX_DOCUMENT_COUNT = 100
     private_constant :MAX_DOCUMENT_COUNT
 
-    XDG_CACHE_HOME = ENV
-      .fetch("XDG_CACHE_HOME") { File.join(Dir.home, ".cache") }
-      .then { |path| File.expand_path(path) }
-      .freeze
-    private_constant :XDG_CACHE_HOME
-
-    PROGRAM_CACHE_DIR = File.join(XDG_CACHE_HOME, "rfc_reader").freeze
-    private_constant :PROGRAM_CACHE_DIR
-
-    LIBRARY_CACHE_LIST_PATH = File.join(PROGRAM_CACHE_DIR, "library_list.json").freeze
-    private_constant :LIBRARY_CACHE_LIST_PATH
-
-    LIBRARY_CACHE_DIR = File.join(PROGRAM_CACHE_DIR, "library").freeze
-    private_constant :LIBRARY_CACHE_DIR
-
     # @param title [String] the RFC title
     # @param url [String] the text file URL for the RFC
     # @return [String] the RFC content
     def self.download_document(title:, url:)
       file_name = File.basename(url)
-      file_path = File.join(LIBRARY_CACHE_DIR, file_name)
+      file_path = File.join(library_cache_dir, file_name)
 
       content = Net::HTTP.get(URI(url))
-      FileUtils.mkdir_p(LIBRARY_CACHE_DIR)
+      FileUtils.mkdir_p(library_cache_dir)
       File.write(file_path, content)
       add_to_catalog(title: title, url: url, path: file_path)
 
@@ -60,8 +45,8 @@ module RfcReader
     #   ]
     # @return [Array<Hash<String, String>>] a list of RFC info hashes
     def self.catalog
-      if File.exist?(LIBRARY_CACHE_LIST_PATH)
-        content = File.read(LIBRARY_CACHE_LIST_PATH)
+      if File.exist?(library_cache_list_path)
+        content = File.read(library_cache_list_path)
         JSON.parse(content, symbolize_names: true)
       else
         []
@@ -90,12 +75,36 @@ module RfcReader
       list = [rfc, *list]
       while list.size > MAX_DOCUMENT_COUNT
         path = list.pop[:path]
-        FileUtils.rm_f(path) if path.start_with?(LIBRARY_CACHE_DIR)
+        FileUtils.rm_f(path) if path.start_with?(library_cache_dir)
       end
 
       json = JSON.pretty_generate(list)
-      FileUtils.mkdir_p(PROGRAM_CACHE_DIR)
-      File.write(LIBRARY_CACHE_LIST_PATH, json)
+      FileUtils.mkdir_p(program_cache_dir)
+      File.write(library_cache_list_path, json)
+    end
+
+    # Cache directories
+
+    # @return [String]
+    def self.xdg_cache_home
+      ENV
+        .fetch("XDG_CACHE_HOME") { File.join(Dir.home, ".cache") }
+        .then { |path| File.expand_path(path) }
+    end
+
+    # @return [String]
+    def self.program_cache_dir
+      File.join(xdg_cache_home, "rfc_reader")
+    end
+
+    # @return [String]
+    def self.library_cache_list_path
+      File.join(program_cache_dir, "library_list.json")
+    end
+
+    # @return [String]
+    def self.library_cache_dir
+      File.join(program_cache_dir, "library")
     end
   end
 end

@@ -1,0 +1,288 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://www.rfc-editor.org/search/rfc_search_detail.php
+    body:
+      encoding: US-ASCII
+      string: combo_box=csv
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.rfc-editor.org
+      Content-Type:
+      - application/x-www-form-urlencoded
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Sep 2024 20:46:45 GMT
+      Content-Type:
+      - text/html; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - PHP/7.4.33
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8c5c6d4e1945943a-SJC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        CjwhRE9DVFlQRSBodG1sIFBVQkxJQz4KPGhlYWQ+CiAgICAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCIgLz4KICAgICAgICA8bWV0YSBodHRwLWVxdWl2PSJYLVVBLUNvbXBhdGlibGUiIGNvbnRlbnQ9IklFPUVkZ2UiIC8+CiAgICAgICAgPG1ldGEgbmFtZT0idmlld3BvcnQiIGNvbnRlbnQ9IndpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLCBtYXhpbXVtLXNjYWxlPTEiIC8+ICAgICAgICAKICAgICAgICAgPHRpdGxlPlJGQyBTZWFyY2ggRGV0YWlsPC90aXRsZT4gCjxzY3JpcHQgc3JjPSJqcy9qcXVlcnkuanMiIHR5cGU9InRleHQvamF2YXNjcmlwdCI+Cjwvc2NyaXB0PgoKPHNjcmlwdCBzcmM9ImpzL3ZhbGlkYXRlX3JmY3NlYXJjaC5qcyIgdHlwZT0idGV4dC9qYXZhc2NyaXB0Ij4KPC9zY3JpcHQ+Cgo8bGluayByZWw9InN0eWxlc2hlZXQiIG1lZGlhPSJzY3JlZW4iIGhyZWY9ImNzcy9yZmNzZWFyY2hfd3AuY3NzIiB0eXBlPSJ0ZXh0L2NzcyIgLz4KPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBtZWRpYT0iYWxsIiBocmVmPSJjc3MvcmZjc2VhcmNoX21vYmlsZS5jc3MiIHR5cGU9InRleHQvY3NzIiAvPiA8c2NyaXB0PgogLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLwkKLypUaGlzIGZ1bmN0aW9uIHJ1bnMgd2hlbiByZmNfc2VhcmNoIHBhZ2UgaXMgbG9hZGVkCQkJCQkJCQkgKi8KLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8JCmZ1bmN0aW9uIGxvYWQoKXsKLy9EaXNhYmxlZCB0aGUgb3RoZXIgc3RhdHVzCQoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdCIpLmRpc2FibGVkID0gdHJ1ZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiYmN0IikuZGlzYWJsZWQgPSB0cnVlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJpbCIpLmRpc2FibGVkID0gdHJ1ZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZXgiKS5kaXNhYmxlZCA9IHRydWU7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImhjIikuZGlzYWJsZWQgPSB0cnVlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ1biIpLmRpc2FibGVkID0gdHJ1ZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3RkX3RyayIpLmRpc2FibGVkID0gdHJ1ZTsKCQovL1VuY2hlY2tlZCB0aGUgT3RoZXIgc3RhdHVzCQkKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3QiKS5jaGVja2VkID0gZmFsc2U7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImJjdCIpLmNoZWNrZWQgPSBmYWxzZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaWwiKS5jaGVja2VkID0gZmFsc2U7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImV4IikuY2hlY2tlZCA9IGZhbHNlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJoYyIpLmNoZWNrZWQgPSBmYWxzZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgidW4iKS5jaGVja2VkID0gZmFsc2U7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInN0ZF90cmsiKS5jaGVja2VkID0gZmFsc2U7CgoJfQovKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqLwkKLypUaGlzIGlzIGEgY29uZGl0aW9uYWwgZnVuY3Rpb24gd2hjaWggcnVucyB3aGVuIHJmY19zZWFyY2hfZGV0YWlsIHBhZ2UgaXMgbG9hZGVkKi8KLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi8JCmZ1bmN0aW9uIGxvYWRfY29uZGl0aW9uKCl7CgppZiAoZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoIkFueSIpLmNoZWNrZWQgPT0gdHJ1ZSl7Ci8vRGlzYWJsZWQgdGhlIG90aGVyIHN0YXR1cwkJCgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInN0IikuZGlzYWJsZWQgPSB0cnVlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJiY3QiKS5kaXNhYmxlZCA9IHRydWU7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImlsIikuZGlzYWJsZWQgPSB0cnVlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJleCIpLmRpc2FibGVkID0gdHJ1ZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiaGMiKS5kaXNhYmxlZCA9IHRydWU7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoInVuIikuZGlzYWJsZWQgPSB0cnVlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdGRfdHJrIikuZGlzYWJsZWQgPSB0cnVlOwoJCi8vVW5jaGVja2VkIHRoZSBPdGhlciBzdGF0dXMJCQoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzdCIpLmNoZWNrZWQgPSBmYWxzZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiYmN0IikuY2hlY2tlZCA9IGZhbHNlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJpbCIpLmNoZWNrZWQgPSBmYWxzZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZXgiKS5jaGVja2VkID0gZmFsc2U7CgkJZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImhjIikuY2hlY2tlZCA9IGZhbHNlOwoJCWRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJ1biIpLmNoZWNrZWQgPSBmYWxzZTsKCQlkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3RkX3RyayIpLmNoZWNrZWQgPSBmYWxzZTsKCX0KfQoJCjwvc2NyaXB0PgoKPC9oZWFkPgo8Ym9keSBvbmxvYWQ9c2VsZWN0UHViRGF0ZVR5cGUoKT48ZGl2IGNsYXNzPSJjb250YWluZXIiPjxkaXYgY2xhc3M9ImhlYWRlciI+PGRpdiBjbGFzcz0iaGVhZGVyaW1nd3JhcCI+PGRpdiBjbGFzcz0iaGVhZGVyaW1nIj48c3BhbiBjbGFzcz0iYmxvZ190aXRsZSI+PGEgaHJlZj0iLyI+UkZDIEVkaXRvcjwvYT48L3NwYW4+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iaGVscF9ib3giPiA8ZGl2IGNsYXNzPSJoZWxwX2xpbmsiPjxhIGhyZWY9Ii9hYm91dC9zZWFyY2gvIj5BYm91dCB0aGlzIHBhZ2U8L2E+PC9kaXY+PC9kaXY+PC9kaXY+PGRpdiBjbGFzcz0iY29udGVudCI+PGRpdiBjbGFzcz0ic2VhcmNoZm9ybSI+PGZvcm0gaWQ9InF1ZXJ5IiBuYW1lPSJxdWVyeSIgYWN0aW9uPSJyZmNfc2VhcmNoX2RldGFpbC5waHAiIG1ldGhvZD0iR0VUIiBvbnN1Ym1pdD0icmV0dXJuIHZhbGlkYXRlUkZDU2VhcmNoRm9ybSh0aGlzKTsiID48dGFibGUgYm9yZGVyID0iMCIgY2xhc3M9ImZvcm10YWJsZSIgd2lkdGg9IjUyJSI+PHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPjxhYmJyPlJGQzwvYWJicj4gTnVtYmVyIChvciBTdWJzZXJpZXMgTnVtYmVyKTo8L3RkPjx0ZD48aW5wdXQgdHlwZT0idGV4dCIgaWQ9InJmYyIgbmFtZT0icmZjIiBzaXplPSI4IiBtYXhsZW5ndGg9IjgiLz48L3RkPjwvdHI+PHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPlRpdGxlL0tleXdvcmQ6Jm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A7PC90ZD48dGQ+PGlucHV0IG5hbWU9InRpdGxlIiB0eXBlPSJ0ZXh0IiBpZD0idGl0bGUiIHNpemU9IjQwIiBtYXhsZW5ndGg9IjQwIiBjbGFzcz0ibXl0ZXh0IiB2YWx1ZT0gImNzdiIgPjwvdGQ+PC90cj48dHI+PHRkIGNvbHNwYW49IjIiPjxpbnB1dCBuYW1lPSJhYnN0cmFjdCIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJhYnNvbiIgaWQ9ImFic3RyYWN0Ii8+U2hvdyBBYnN0cmFjdCZuYnNwOyZuYnNwOzxpbnB1dCBuYW1lPSJrZXl3b3JkcyIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJrZXlzb24iIGlkPSJrZXl3b3JkcyIvPlNob3cgS2V5d29yZHM8L3RkPjwvdHI+PC90YWJsZT48bGFiZWwgY2xhc3M9ImNvbGxhcHNlIiBmb3I9Il8xIj5BZGRpdGlvbmFsIENyaXRlcmlhIDxpbWcgc3JjPSJpbWFnZS9kb3duLnBuZyIgd2lkdGg9IjE1IiBoZWlnaHQ9IjEwIj48L2xhYmVsPjxpbnB1dCBpZD0iXzEiIHR5cGU9ImNoZWNrYm94Ij48ZGl2Pjx0YWJsZSB3aWR0aD0iNzUlIiBjbGFzcz0iZm9ybXRhYmxlIiBib3JkZXI9IjAiPiAgIAkgICAgIDx0cj48dGQgY2xhc3M9ImJvbGR0ZXh0Ij4KICAgICAgICAgICAgIDxsYWJlbCBmb3I9InB1YnN0YXR1cyI+U3RhdHVzOjwvbGFiZWw+PGJyPjxicj48YnI+PGJyPjxicj48YnI+CgkgICAgIDwvdGQ+PHRkPjxpbnB1dCBuYW1lPSJwdWJzdGF0dXNbXSIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJBbnkiIGNoZWNrZWQgaWQ9IkFueSIgb25jaGFuZ2U9ImVuYWJsZUFueSgpOyIvPkFueTxicj48aW5wdXQgbmFtZT0icHVic3RhdHVzW10iIHR5cGU9ImNoZWNrYm94IiB2YWx1ZT0iU3RhbmRhcmRzIFRyYWNrIiBpZD0gInN0IiBvbmNoYW5nZT0iZGlzYWJsZUFueSgpOyIvPiBTdGFuZGFyZHMgVHJhY2smbmJzcDo6Jm5ic3A8c2VsZWN0IG5hbWU9InN0ZF90cmsiIGlkPSJzdGRfdHJrIj48b3B0aW9uIHZhbHVlPSJBbnkiPkFueTwvb3B0aW9uPgo8b3B0aW9uIHZhbHVlPSJQcm9wb3NlZCBTdGFuZGFyZCI+UHJvcG9zZWQgU3RhbmRhcmQ8L29wdGlvbj4KPG9wdGlvbiB2YWx1ZT0iRHJhZnQgU3RhbmRhcmQiPkRyYWZ0IFN0YW5kYXJkPC9vcHRpb24+CjxvcHRpb24gdmFsdWU9IkludGVybmV0IFN0YW5kYXJkIj5JbnRlcm5ldCBTdGFuZGFyZDwvb3B0aW9uPgo8L3NlbGVjdD4KPGJyPjxpbnB1dCBuYW1lPSJwdWJzdGF0dXNbXSIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJCZXN0IEN1cnJlbnQgUHJhY3RpY2UiIGlkPSJiY3QiIG9uY2hhbmdlPSJkaXNhYmxlQW55KCk7Ii8+QmVzdCBDdXJyZW50IFByYWN0aWNlPGJyPjxpbnB1dCBuYW1lPSJwdWJzdGF0dXNbXSIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJJbmZvcm1hdGlvbmFsIiBpZD0iaWwiIG9uY2hhbmdlPSJkaXNhYmxlQW55KCk7Ii8+SW5mb3JtYXRpb25hbDxicj48aW5wdXQgbmFtZT0icHVic3RhdHVzW10iIHR5cGU9ImNoZWNrYm94IiB2YWx1ZT0iRXhwZXJpbWVudGFsIiBpZD0iZXgiIG9uY2hhbmdlPSJkaXNhYmxlQW55KCk7Ii8+RXhwZXJpbWVudGFsPGJyPjxpbnB1dCBuYW1lPSJwdWJzdGF0dXNbXSIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJIaXN0b3JpYyIgaWQ9ImhjIiBvbmNoYW5nZT0iZGlzYWJsZUFueSgpOyIvPkhpc3RvcmljPGJyPjxpbnB1dCBuYW1lPSJwdWJzdGF0dXNbXSIgdHlwZT0iY2hlY2tib3giIHZhbHVlPSJVbmtub3duIiBpZD0idW4iIG9uY2hhbmdlPSJkaXNhYmxlQW55KCk7Ii8+VW5rbm93bjxicj48L3RkPjwvdHI+PHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPjxsYWJlbCBmb3I9InB1Yl9kYXRlIj5QdWJsaWNhdGlvbiBEYXRlOjwvbGFiZWw+PC90ZD48dGQ+PHNlbGVjdCBuYW1lPSJwdWJfZGF0ZV90eXBlIiBpZD0icHViX2RhdGVfdHlwZSIgb25jaGFuZ2U9InNlbGVjdFB1YkRhdGVUeXBlKCk7Ij48b3B0aW9uIHZhbHVlPSJhbnkiIHNlbGVjdGVkID5Bbnk8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJyYW5nZSI+UmFuZ2UgKGluY2x1c2l2ZSk8L29wdGlvbj48b3B0aW9uIHZhbHVlPSJ0aGlzX21vbnRoIj5UaGlzIE1vbnRoPC9vcHRpb24+PG9wdGlvbiB2YWx1ZT0idGhpc195ZWFyIj5UaGlzIFllYXI8L29wdGlvbj4JIDwvc2VsZWN0PjwvdGQ+PC90cj4JCQkKICAgICAgICAgPHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPjxsYWJlbCBpZD0ibGFiZWxfZnJvbSI+RnJvbTwvbGFiZWw+PC90ZD4KCSA8dGQ+CiAgICAgICAgIDxzZWxlY3QgbmFtZT0iZnJvbV9tb250aCIgaWQ9ImZyb21fbW9udGgiPjxvcHRpb24gdmFsdWU9IiI+TW9udGg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkphbnVhcnkiPkphbnVhcnk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkZlYnJ1YXJ5Ij5GZWJydWFyeTwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iTWFyY2giPk1hcmNoPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJBcHJpbCI+QXByaWw8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Ik1heSI+TWF5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJKdW5lIj5KdW5lPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJKdWx5Ij5KdWx5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJBdWd1c3QiPkF1Z3VzdDwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iU2VwdGVtYmVyIj5TZXB0ZW1iZXI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Ik9jdG9iZXIiPk9jdG9iZXI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Ik5vdmVtYmVyIj5Ob3ZlbWJlcjwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iRGVjZW1iZXIiPkRlY2VtYmVyPC9vcHRpb24+CiAgICAgICAgICAgIDwvc2VsZWN0PgoJICAgICA8c2VsZWN0IG5hbWU9ImZyb21feWVhciIgaWQ9ImZyb21feWVhciI+PG9wdGlvbiB2YWx1ZT0iIj5ZZWFyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTY4Ij4xOTY4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTY5Ij4xOTY5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTcwIj4xOTcwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTcxIj4xOTcxPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTcyIj4xOTcyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTczIj4xOTczPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc0Ij4xOTc0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc1Ij4xOTc1PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc2Ij4xOTc2PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc3Ij4xOTc3PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc4Ij4xOTc4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTc5Ij4xOTc5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTgwIj4xOTgwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTgxIj4xOTgxPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTgyIj4xOTgyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTgzIj4xOTgzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg0Ij4xOTg0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg1Ij4xOTg1PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg2Ij4xOTg2PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg3Ij4xOTg3PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg4Ij4xOTg4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTg5Ij4xOTg5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTkwIj4xOTkwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTkxIj4xOTkxPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTkyIj4xOTkyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTkzIj4xOTkzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk0Ij4xOTk0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk1Ij4xOTk1PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk2Ij4xOTk2PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk3Ij4xOTk3PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk4Ij4xOTk4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIxOTk5Ij4xOTk5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDAwIj4yMDAwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDAxIj4yMDAxPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDAyIj4yMDAyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDAzIj4yMDAzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA0Ij4yMDA0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA1Ij4yMDA1PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA2Ij4yMDA2PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA3Ij4yMDA3PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA4Ij4yMDA4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDA5Ij4yMDA5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDEwIj4yMDEwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDExIj4yMDExPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDEyIj4yMDEyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDEzIj4yMDEzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE0Ij4yMDE0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE1Ij4yMDE1PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE2Ij4yMDE2PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE3Ij4yMDE3PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE4Ij4yMDE4PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDE5Ij4yMDE5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDIwIj4yMDIwPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDIxIj4yMDIxPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDIyIj4yMDIyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDIzIj4yMDIzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSIyMDI0Ij4yMDI0PC9vcHRpb24+CiAgICAgICAgICAgIDwvc2VsZWN0PgoKCgkgPC90ZD48L3RyPgoJIDx0cj48dGQgY2xhc3M9ImJvbGR0ZXh0Ij48bGFiZWwgaWQ9ImxhYmVsX3RvIj5UbzwvbGFiZWw+IAogICAgICAgICA8L3RkPgoJIDx0ZD4KICAgICAgICAgPHNlbGVjdCBuYW1lPSJ0b19tb250aCIgaWQ9InRvX21vbnRoIj4KPG9wdGlvbiB2YWx1ZT0iIj5Nb250aDwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iSmFudWFyeSI+SmFudWFyeTwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iRmVicnVhcnkiPkZlYnJ1YXJ5PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJNYXJjaCI+TWFyY2g8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkFwcmlsIj5BcHJpbDwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iTWF5Ij5NYXk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Ikp1bmUiPkp1bmU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Ikp1bHkiPkp1bHk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkF1Z3VzdCI+QXVndXN0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJTZXB0ZW1iZXIiPlNlcHRlbWJlcjwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iT2N0b2JlciI+T2N0b2Jlcjwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iTm92ZW1iZXIiPk5vdmVtYmVyPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJEZWNlbWJlciI+RGVjZW1iZXI8L29wdGlvbj4KICAgICAgICAgICAgPC9zZWxlY3Q+CgkgICA8c2VsZWN0IG5hbWU9InRvX3llYXIiIGlkPSJ0b195ZWFyIj48b3B0aW9uIHZhbHVlPSIiPlllYXI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NjgiPjE5Njg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NjkiPjE5Njk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzAiPjE5NzA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzEiPjE5NzE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzIiPjE5NzI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzMiPjE5NzM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzQiPjE5NzQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzUiPjE5NzU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzYiPjE5NzY8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzciPjE5Nzc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzgiPjE5Nzg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5NzkiPjE5Nzk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODAiPjE5ODA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODEiPjE5ODE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODIiPjE5ODI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODMiPjE5ODM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODQiPjE5ODQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODUiPjE5ODU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODYiPjE5ODY8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODciPjE5ODc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODgiPjE5ODg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5ODkiPjE5ODk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTAiPjE5OTA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTEiPjE5OTE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTIiPjE5OTI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTMiPjE5OTM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTQiPjE5OTQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTUiPjE5OTU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTYiPjE5OTY8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTciPjE5OTc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTgiPjE5OTg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjE5OTkiPjE5OTk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDAiPjIwMDA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDEiPjIwMDE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDIiPjIwMDI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDMiPjIwMDM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDQiPjIwMDQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDUiPjIwMDU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDYiPjIwMDY8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDciPjIwMDc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDgiPjIwMDg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMDkiPjIwMDk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTAiPjIwMTA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTEiPjIwMTE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTIiPjIwMTI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTMiPjIwMTM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTQiPjIwMTQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTUiPjIwMTU8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTYiPjIwMTY8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTciPjIwMTc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTgiPjIwMTg8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMTkiPjIwMTk8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMjAiPjIwMjA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMjEiPjIwMjE8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMjIiPjIwMjI8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMjMiPjIwMjM8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IjIwMjQiPjIwMjQ8L29wdGlvbj4KICAgICAgICAgICAgPC9zZWxlY3Q+CjwvdGQ+PC90cj4JIDx0cj48dGQgY2xhc3M9ImJvbGR0ZXh0Ij48bGFiZWwgZm9yID0gInN0cmVhbV9uYW1lIiBjbGFzcz0iY29udGVudCI+IFN0cmVhbTo8L2xhYmVsPjwvdGQ+CiAgICAgICAgIDx0ZD48c2VsZWN0IG5hbWU9InN0cmVhbV9uYW1lIiBpZD0ic3RyZWFtX25hbWUiPjxvcHRpb24gdmFsdWU9IiIgc2VsZWN0ZWQ9InNlbGVjdGVkIj5Bbnk8L29wdGlvbj4KICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iSUVURiI+SUVURjwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJJUlRGIj5JUlRGPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IklBQiI+SUFCPC9vcHRpb24+CiAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9IkluZGVwZW5kZW50Ij5JbmRlcGVuZGVudDwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJFZGl0b3JpYWwiPkVkaXRvcmlhbDwvb3B0aW9uPgogICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJMZWdhY3kiPkxlZ2FjeTwvb3B0aW9uPgogICAgICAgICA8L3NlbGVjdD4KCSA8L3RkPjwvdHI+ICAgICAgICAgPHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPjxsYWJlbCBmb3IgPSAiYXJlYV9hY3JvbnltIiBjbGFzcz0iY29udGVudCI+IEFyZWE6PC9sYWJlbD48L3RkPgoJIDx0ZD48c2VsZWN0IG5hbWU9ImFyZWFfYWNyb255bSIgaWQ9ImFyZWFfYWNyb255bSI+PG9wdGlvbiB2YWx1ZT0iIiBzZWxlY3RlZD0ic2VsZWN0ZWQiPkFueTwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iYXBwIj5hcHA8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9ImFydCI+YXJ0PC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJnZW4iPmdlbjwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0iaW50Ij5pbnQ8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9Im9wcyI+b3BzPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJyYWkiPnJhaTwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0icnRnIj5ydGc8L29wdGlvbj4KICAgICAgICAgICAgIDxvcHRpb24gdmFsdWU9InNlYyI+c2VjPC9vcHRpb24+CiAgICAgICAgICAgICA8b3B0aW9uIHZhbHVlPSJ0c3YiPnRzdjwvb3B0aW9uPgogICAgICAgICAgICAgPG9wdGlvbiB2YWx1ZT0id2l0Ij53aXQ8L29wdGlvbj4KICAgICAgICAgICAgPC9zZWxlY3Q+CjwvdGQ+PC90cj4JIDx0cj48dGQgY2xhc3M9ImJvbGR0ZXh0Ij5XRyBBY3JvbnltOjwvdGQ+CiAgICAgICAgIDx0ZD48aW5wdXQgaWQ9IndnX2Fjcm9ueW0iIHNpemU9IjgiIHR5cGU9InRleHQiIG5hbWU9IndnX2Fjcm9ueW0iIG1heGxlbmd0aD0iMTIiLz48L3RkPjwvdHI+CSA8dHI+PHRkIGNsYXNzPSJib2xkdGV4dCI+QXV0aG9yIChzdXJuYW1lKTo8L3RkPgogICAgICAgICA8dGQ+PGlucHV0IG5hbWU9ImF1dGhvciIgdHlwZT0idGV4dCIgaWQ9ImF1dGhvciIgc2l6ZT0iMTAiIG1heGxlbmd0aD0iMjAiIC8+PC90ZD48L3RyPgkgPHRyPjx0ZCBjbGFzcz0iYm9sZHRleHQiPkFic3RyYWN0IGNvbnRhaW5zOjwvdGQ+CgkgPHRkPgogICAgICAgICA8aW5wdXQgbmFtZT0iYWJzdHJhY3RfYm94IiB0eXBlPSJ0ZXh0IiBpZD0iYWJzdHJhY3RfYm94IiBzaXplPSIyNSIgbWF4bGVuZ3RoPSI0MCIgLz48L3RkPjwvdHI+PC90YWJsZT48L2Rpdj48cCBhbGlnbj0iY2VudGVyIj48aW5wdXQgdmFsdWU9IlNlYXJjaCIgdHlwZT0ic3VibWl0IiAvPjxpbnB1dCBuYW1lPSJSZXNldCIgdHlwZT0iYnV0dG9uIiB2YWx1ZT0iQ2xlYXIgYWxsIiBvbmNsaWNrPSJyZXR1cm4gY2xlYXJBZHZTZWFyY2hGb3JtKGRvY3VtZW50LmZvcm1zLnF1ZXJ5KTsiLz48L3A+PC9mb3JtPjwvZGl2PjxwPjMmbmJzcDtyZXN1bHRzPGRpdiBjbGFzcz0ic2Nyb2xsdGFibGUiPjx0YWJsZSBjbGFzcz0nZ3JpZHRhYmxlJz48dHI+PHRoPjxhIGhyZWY9J3JmY19zZWFyY2hfZGV0YWlsLnBocD9zb3J0a2V5PU51bWJlciZzb3J0aW5nPURFU0MmcGFnZT0yNSZ0aXRsZT1jc3YmcHVic3RhdHVzW109QW55JnB1Yl9kYXRlX3R5cGU9YW55Jz5OdW1iZXI8L2E+PC90aD48dGg+RmlsZXM8L3RoPjx0aD5UaXRsZTwvdGg+PHRoPkF1dGhvcnM8L3RoPjx0aD48YSBocmVmPSdyZmNfc2VhcmNoX2RldGFpbC5waHA/c29ydGtleT1EYXRlJnNvcnRpbmc9REVTQyZwYWdlPTI1JnRpdGxlPWNzdiZwdWJzdGF0dXNbXT1BbnkmcHViX2RhdGVfdHlwZT1hbnknPkRhdGU8L2E+PC90aD48dGg+TW9yZSBJbmZvPC90aD48dGg+U3RhdHVzPC90aD48L3RyPjx0cj48dGQ+PGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvaW5mby9yZmM0MTgwIiB0YXJnZXQ9Il9ibGFuayI+UkZDJm5ic3A7NDE4MDwvYT48L3RkPjx0ZD48YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9yZmMvcmZjNDE4MC50eHQiIHRhcmdldD0iX2JsYW5rIj5BU0NJSTwvYT4sIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL3BkZnJmYy9yZmM0MTgwLnR4dC5wZGYiIHRhcmdldD0iX2JsYW5rIj5QREY8L2E+LCAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvcmZjL3JmYzQxODAuaHRtbCIgdGFyZ2V0PSJfYmxhbmsiPkhUTUw8L2E+LCA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9yZmMvaW5saW5lLWVycmF0YS9yZmM0MTgwLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5IVE1MIHdpdGggaW5saW5lIGVycmF0YTwvYT48L3RkPjx0ZCBjbGFzcz0idGl0bGUiPkNvbW1vbiBGb3JtYXQgYW5kIE1JTUUgVHlwZSBmb3IgQ29tbWEtU2VwYXJhdGVkIFZhbHVlcyAoQ1NWKSBGaWxlczwvdGQ+PHRkPlkuIFNoYWZyYW5vdmljaDwvdGQ+PHRkPk9jdG9iZXIgMjAwNTwvdGQ+PHRkPjxhIGNsYXNzPSJib2xkdGV4dCIgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvZXJyYXRhL3JmYzQxODAiIHRhcmdldD0iX2JsYW5rIj5FcnJhdGE8L2E+LCBVcGRhdGVkIGJ5IDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL2luZm8vcmZjNzExMSIgdGFyZ2V0PSJfYmxhbmsiPlJGQyZuYnNwOzcxMTE8L2E+PC90ZD48dGQ+SW5mb3JtYXRpb25hbDwvdGQ+PC90cj48dHI+PHRkPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL2luZm8vcmZjNzExMSIgdGFyZ2V0PSJfYmxhbmsiPlJGQyZuYnNwOzcxMTE8L2E+PC90ZD48dGQ+PGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvcmZjL3JmYzcxMTEudHh0IiB0YXJnZXQ9Il9ibGFuayI+QVNDSUk8L2E+LCA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9wZGZyZmMvcmZjNzExMS50eHQucGRmIiB0YXJnZXQ9Il9ibGFuayI+UERGPC9hPiwgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL3JmYy9yZmM3MTExLmh0bWwiIHRhcmdldD0iX2JsYW5rIj5IVE1MPC9hPjwvdGQ+PHRkIGNsYXNzPSJ0aXRsZSI+VVJJIEZyYWdtZW50IElkZW50aWZpZXJzIGZvciB0aGUgdGV4dC9jc3YgTWVkaWEgVHlwZTwvdGQ+PHRkPk0uIEhhdXNlbmJsYXMsIEUuIFdpbGRlLCBKLiBUZW5uaXNvbjwvdGQ+PHRkPkphbnVhcnkgMjAxNDwvdGQ+PHRkPjxhIGNsYXNzPSJib2xkdGV4dCIgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvZXJyYXRhL3JmYzcxMTEiIHRhcmdldD0iX2JsYW5rIj5FcnJhdGE8L2E+LCBVcGRhdGVzIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL2luZm8vcmZjNDE4MCIgdGFyZ2V0PSJfYmxhbmsiPlJGQyZuYnNwOzQxODA8L2E+PC90ZD48dGQ+SW5mb3JtYXRpb25hbDwvdGQ+PC90cj48dHI+PHRkPjxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL2luZm8vcmZjNzUwNyIgdGFyZ2V0PSJfYmxhbmsiPlJGQyZuYnNwOzc1MDc8L2E+PC90ZD48dGQ+PGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvcmZjL3JmYzc1MDcudHh0IiB0YXJnZXQ9Il9ibGFuayI+QVNDSUk8L2E+LCA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9wZGZyZmMvcmZjNzUwNy50eHQucGRmIiB0YXJnZXQ9Il9ibGFuayI+UERGPC9hPiwgICAgIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL3JmYy9yZmM3NTA3Lmh0bWwiIHRhcmdldD0iX2JsYW5rIj5IVE1MPC9hPjwvdGQ+PHRkIGNsYXNzPSJzcGVjaWFsIj5UTFMgRmFsbGJhY2sgU2lnbmFsaW5nIENpcGhlciBTdWl0ZSBWYWx1ZSAoU0NTVikgZm9yIFByZXZlbnRpbmcgUHJvdG9jb2wgRG93bmdyYWRlIEF0dGFja3M8L3RkPjx0ZD5CLiBNb2VsbGVyLCBBLiBMYW5nbGV5PC90ZD48dGQ+QXByaWwgMjAxNTwvdGQ+PHRkPk9ic29sZXRlZCBieSA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9pbmZvL3JmYzg5OTYiIHRhcmdldD0iX2JsYW5rIj5SRkMmbmJzcDs4OTk2PC9hPiwgVXBkYXRlcyA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9pbmZvL3JmYzIyNDYiIHRhcmdldD0iX2JsYW5rIj5SRkMmbmJzcDsyMjQ2PC9hPiwgPGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvaW5mby9yZmM0MzQ2IiB0YXJnZXQ9Il9ibGFuayI+UkZDJm5ic3A7NDM0NjwvYT4sIDxhIGhyZWY9Imh0dHBzOi8vd3d3LnJmYy1lZGl0b3Iub3JnL2luZm8vcmZjNDM0NyIgdGFyZ2V0PSJfYmxhbmsiPlJGQyZuYnNwOzQzNDc8L2E+LCA8YSBocmVmPSJodHRwczovL3d3dy5yZmMtZWRpdG9yLm9yZy9pbmZvL3JmYzUyNDYiIHRhcmdldD0iX2JsYW5rIj5SRkMmbmJzcDs1MjQ2PC9hPiwgPGEgaHJlZj0iaHR0cHM6Ly93d3cucmZjLWVkaXRvci5vcmcvaW5mby9yZmM2MzQ3IiB0YXJnZXQ9Il9ibGFuayI+UkZDJm5ic3A7NjM0NzwvYT48L3RkPjx0ZD5Qcm9wb3NlZCBTdGFuZGFyZDwvdGQ+PC90cj48L3RhYmxlPjwvZGl2PiAgCTxicj4KICAgICAgICA8ZGl2IGNsYXNzPSJmb290ZXIiPgogICAgICAgIDxkaXYgaWQ9ImZvb3RlcmRpdnMiPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IHN0eWxlPSJjbGVhcjpib3RoIj48L2Rpdj4KCTxwIGNsYXNzPSJjcmVkaXQiPgo8YSBocmVmPSIvL3d3dy5pYWIub3JnLyI+SUFCPC9hPiDigKIgIDxhIGhyZWY9Ii8vd3d3LmlhbmEub3JnLyI+SUFOQTwvYT4g4oCiICA8YSBocmVmPSIvL3d3dy5pZXRmLm9yZyI+SUVURjwvYT4gIOKAoiA8YSBocmVmPSIvL3d3dy5pcnRmLm9yZyI+SVJURjwvYT4gIOKAoiAgPGEgaHJlZj0iL2Fib3V0L2luZGVwZW5kZW50Ij5JU0U8L2E+ICDigKIgPGEgaHJlZj0iLy93d3cuaW50ZXJuZXRzb2NpZXR5Lm9yZyI+SVNPQzwvYT4KPGJyPgo8YSBocmVmPSIvcmVwb3J0LXN1bW1hcnkiPlJlcG9ydHM8L2E+ICDigKIgPGEgaHJlZj0iL3NpdGVtYXAiPlNpdGUgTWFwPC9hPiAg4oCiICA8YSBocmVmPSIvY29udGFjdCI+Q29udGFjdCBVczwvYT4KCjwvUD4gCiAgIDwhLS0gZW5kIC5mb290ZXIgLS0+PC9kaXY+CiAgICA8IS0tIGVuZCAuY29udGFpbmVyIC0tPjwvZGl2PgogICAgICAgIDwvYm9keT4KCTwvaHRtbD4K
+  recorded_at: Thu, 19 Sep 2024 20:46:45 GMT
+- request:
+    method: get
+    uri: https://www.rfc-editor.org/rfc/rfc4180.txt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - www.rfc-editor.org
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 19 Sep 2024 20:46:45 GMT
+      Content-Type:
+      - text/plain; charset=utf-8
+      Content-Length:
+      - '12931'
+      Connection:
+      - keep-alive
+      Last-Modified:
+      - Fri, 30 Sep 2005 22:01:32 GMT
+      Etag:
+      - '"3283-402045e4be700-gzip"'
+      Vary:
+      - Accept-Encoding
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      Cache-Control:
+      - max-age=1200
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '14493'
+      Accept-Ranges:
+      - bytes
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 8c5c6d506aa7645e-SJC
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: "\n\n\n\n\n\nNetwork Working Group                                    Y.
+        Shafranovich\nRequest for Comments: 4180                SolidMatrix Technologies,
+        Inc.\nCategory: Informational                                     October
+        2005\n\n\n   Common Format and MIME Type for Comma-Separated Values (CSV)
+        Files\n\nStatus of This Memo\n\n   This memo provides information for the
+        Internet community.  It does\n   not specify an Internet standard of any kind.
+        \ Distribution of this\n   memo is unlimited.\n\nCopyright Notice\n\n   Copyright
+        (C) The Internet Society (2005).\n\nAbstract\n\n   This RFC documents the
+        format used for Comma-Separated Values (CSV)\n   files and registers the associated
+        MIME type \"text/csv\".\n\nTable of Contents\n\n   1. Introduction ....................................................2\n
+        \  2. Definition of the CSV Format ....................................2\n
+        \  3. MIME Type Registration of text/csv ..............................4\n
+        \  4. IANA Considerations .............................................5\n
+        \  5. Security Considerations .........................................5\n
+        \  6. Acknowledgments .................................................6\n
+        \  7. References ......................................................6\n
+        \     7.1. Normative References .......................................6\n
+        \     7.2. Informative References .....................................6\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShafranovich
+        \                Informational                      [Page 1]\n\f\nRFC 4180
+        \      Common Format and MIME Type for CSV Files    October 2005\n\n\n1.  Introduction\n\n
+        \  The comma separated values format (CSV) has been used for exchanging\n
+        \  and converting data between various spreadsheet programs for quite\n   some
+        time.  Surprisingly, while this format is very common, it has\n   never been
+        formally documented.  Additionally, while the IANA MIME\n   registration tree
+        includes a registration for\n   \"text/tab-separated-values\" type, no MIME
+        types have ever been\n   registered with IANA for CSV.  At the same time,
+        various programs and\n   operating systems have begun to use different MIME
+        types for this\n   format.  This RFC documents the format of comma separated
+        values\n   (CSV) files and formally registers the \"text/csv\" MIME type for
+        CSV\n   in accordance with RFC 2048 [1].\n\n2.  Definition of the CSV Format\n\n
+        \  While there are various specifications and implementations for the\n   CSV
+        format (for ex. [4], [5], [6] and [7]), there is no formal\n   specification
+        in existence, which allows for a wide variety of\n   interpretations of CSV
+        files.  This section documents the format that\n   seems to be followed by
+        most implementations:\n\n   1.  Each record is located on a separate line,
+        delimited by a line\n       break (CRLF).  For example:\n\n       aaa,bbb,ccc
+        CRLF\n       zzz,yyy,xxx CRLF\n\n   2.  The last record in the file may or
+        may not have an ending line\n       break.  For example:\n\n       aaa,bbb,ccc
+        CRLF\n       zzz,yyy,xxx\n\n   3.  There maybe an optional header line appearing
+        as the first line\n       of the file with the same format as normal record
+        lines.  This\n       header will contain names corresponding to the fields
+        in the file\n       and should contain the same number of fields as the records
+        in\n       the rest of the file (the presence or absence of the header line\n
+        \      should be indicated via the optional \"header\" parameter of this\n
+        \      MIME type).  For example:\n\n       field_name,field_name,field_name
+        CRLF\n       aaa,bbb,ccc CRLF\n       zzz,yyy,xxx CRLF\n\n\n\n\n\n\nShafranovich
+        \                Informational                      [Page 2]\n\f\nRFC 4180
+        \      Common Format and MIME Type for CSV Files    October 2005\n\n\n   4.
+        \ Within the header and each record, there may be one or more\n       fields,
+        separated by commas.  Each line should contain the same\n       number of
+        fields throughout the file.  Spaces are considered part\n       of a field
+        and should not be ignored.  The last field in the\n       record must not
+        be followed by a comma.  For example:\n\n       aaa,bbb,ccc\n\n   5.  Each
+        field may or may not be enclosed in double quotes (however\n       some programs,
+        such as Microsoft Excel, do not use double quotes\n       at all).  If fields
+        are not enclosed with double quotes, then\n       double quotes may not appear
+        inside the fields.  For example:\n\n       \"aaa\",\"bbb\",\"ccc\" CRLF\n
+        \      zzz,yyy,xxx\n\n   6.  Fields containing line breaks (CRLF), double
+        quotes, and commas\n       should be enclosed in double-quotes.  For example:\n\n
+        \      \"aaa\",\"b CRLF\n       bb\",\"ccc\" CRLF\n       zzz,yyy,xxx\n\n
+        \  7.  If double-quotes are used to enclose fields, then a double-quote\n
+        \      appearing inside a field must be escaped by preceding it with\n       another
+        double quote.  For example:\n\n       \"aaa\",\"b\"\"bb\",\"ccc\"\n\n   The
+        ABNF grammar [2] appears as follows:\n\n   file = [header CRLF] record *(CRLF
+        record) [CRLF]\n\n   header = name *(COMMA name)\n\n   record = field *(COMMA
+        field)\n\n   name = field\n\n   field = (escaped / non-escaped)\n\n   escaped
+        = DQUOTE *(TEXTDATA / COMMA / CR / LF / 2DQUOTE) DQUOTE\n\n   non-escaped
+        = *TEXTDATA\n\n   COMMA = %x2C\n\n   CR = %x0D ;as per section 6.1 of RFC
+        2234 [2]\n\n\n\nShafranovich                 Informational                      [Page
+        3]\n\f\nRFC 4180       Common Format and MIME Type for CSV Files    October
+        2005\n\n\n   DQUOTE =  %x22 ;as per section 6.1 of RFC 2234 [2]\n\n   LF =
+        %x0A ;as per section 6.1 of RFC 2234 [2]\n\n   CRLF = CR LF ;as per section
+        6.1 of RFC 2234 [2]\n\n   TEXTDATA =  %x20-21 / %x23-2B / %x2D-7E\n\n3.  MIME
+        Type Registration of text/csv\n\n   This section provides the media-type registration
+        application (as per\n   RFC 2048 [1].\n\n   To: ietf-types@iana.org\n\n   Subject:
+        Registration of MIME media type text/csv\n\n   MIME media type name: text\n\n
+        \  MIME subtype name: csv\n\n   Required parameters: none\n\n   Optional parameters:
+        charset, header\n\n      Common usage of CSV is US-ASCII, but other character
+        sets defined\n      by IANA for the \"text\" tree may be used in conjunction
+        with the\n      \"charset\" parameter.\n\n      The \"header\" parameter indicates
+        the presence or absence of the\n      header line.  Valid values are \"present\"
+        or \"absent\".\n      Implementors choosing not to use this parameter must
+        make their\n      own decisions as to whether the header line is present or
+        absent.\n\n   Encoding considerations:\n\n      As per section 4.1.1. of RFC
+        2046 [3], this media type uses CRLF\n      to denote line breaks.  However,
+        implementors should be aware that\n      some implementations may use other
+        values.\n\n   Security considerations:\n\n      CSV files contain passive
+        text data that should not pose any\n      risks.  However, it is possible
+        in theory that malicious binary\n      data may be included in order to exploit
+        potential buffer overruns\n      in the program processing CSV data.  Additionally,
+        private data\n      may be shared via this format (which of course applies
+        to any text\n      data).\n\n\n\nShafranovich                 Informational
+        \                     [Page 4]\n\f\nRFC 4180       Common Format and MIME
+        Type for CSV Files    October 2005\n\n\n   Interoperability considerations:\n\n
+        \     Due to lack of a single specification, there are considerable\n      differences
+        among implementations.  Implementors should \"be\n      conservative in what
+        you do, be liberal in what you accept from\n      others\" (RFC 793 [8]) when
+        processing CSV files.  An attempt at a\n      common definition can be found
+        in Section 2.\n\n      Implementations deciding not to use the optional \"header\"\n
+        \     parameter must make their own decision as to whether the header is\n
+        \     absent or present.\n\n   Published specification:\n\n      While numerous
+        private specifications exist for various programs\n      and systems, there
+        is no single \"master\" specification for this\n      format.  An attempt
+        at a common definition can be found in Section\n      2.\n\n   Applications
+        that use this media type:\n\n      Spreadsheet programs and various data conversion
+        utilities\n\n   Additional information:\n\n      Magic number(s): none\n\n
+        \     File extension(s): CSV\n\n      Macintosh File Type Code(s): TEXT\n\n
+        \  Person & email address to contact for further information:\n\n      Yakov
+        Shafranovich <ietf@shaftek.org>\n\n   Intended usage: COMMON\n\n   Author/Change
+        controller: IESG\n\n4.  IANA Considerations\n\n   The IANA has registered
+        the MIME type \"text/csv\" using the\n   application provided in Section 3
+        of this document.\n\n5.  Security Considerations\n\n   See discussion above
+        in section 3.\n\n\n\n\nShafranovich                 Informational                      [Page
+        5]\n\f\nRFC 4180       Common Format and MIME Type for CSV Files    October
+        2005\n\n\n6.  Acknowledgments\n\n   The author would like to thank Dave Crocker,
+        Martin Duerst, Joel M.\n   Halpern, Clyde Ingram, Graham Klyne, Bruce Lilly,
+        Chris Lilley, and\n   members of the IESG for their helpful suggestions.  A
+        special word of\n   thanks goes to Dave for helping with the ABNF grammar.\n\n
+        \  The author would also like to thank Henrik Lefkowetz, Marshall Rose,\n
+        \  and the folks at xml.resource.org for providing many of the tools\n   used
+        for preparing RFCs and Internet drafts.\n\n   A special thank you goes to
+        L.T.S.\n\n7.  References\n\n7.1.  Normative References\n\n   [1]  Freed, N.,
+        Klensin, J., and J. Postel, \"Multipurpose Internet\n        Mail Extensions
+        (MIME) Part Four: Registration Procedures\", BCP\n        13, RFC 2048, November
+        1996.\n\n   [2]  Crocker, D. and P. Overell, \"Augmented BNF for Syntax\n
+        \       Specifications: ABNF\", RFC 2234, November 1997.\n\n   [3]  Freed,
+        N. and N. Borenstein, \"Multipurpose Internet Mail\n        Extensions (MIME)
+        Part Two: Media Types\", RFC 2046, November\n        1996.\n\n7.2.  Informative
+        References\n\n   [4]  Repici, J., \"HOW-TO: The Comma Separated Value (CSV)
+        File\n        Format\", 2004,\n        <http://www.creativyst.com/Doc/Articles/CSV/CSV01.htm>.\n\n
+        \  [5]  Edoceo, Inc., \"CSV Standard File Format\", 2004,\n        <http://www.edoceo.com/utilis/csv-file-format.php>.\n\n
+        \  [6]  Rodger, R. and O. Shanaghy, \"Documentation for Ricebridge CSV\n        Manager\",
+        February 2005,\n        <http://www.ricebridge.com/products/csvman/reference.htm>.\n\n
+        \  [7]  Raymond, E., \"The Art of Unix Programming, Chapter 5\", September\n
+        \       2003,\n        <http://www.catb.org/~esr/writings/taoup/html/ch05s02.html>.\n\n
+        \  [8]  Postel, J., \"Transmission Control Protocol\", STD 7, RFC 793,\n        September
+        1981.\n\n\n\n\nShafranovich                 Informational                      [Page
+        6]\n\f\nRFC 4180       Common Format and MIME Type for CSV Files    October
+        2005\n\n\nAuthor's Address\n\n   Yakov Shafranovich\n   SolidMatrix Technologies,
+        Inc.\n\n   EMail: ietf@shaftek.org\n   URI:   http://www.shaftek.org\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShafranovich
+        \                Informational                      [Page 7]\n\f\nRFC 4180
+        \      Common Format and MIME Type for CSV Files    October 2005\n\n\nFull
+        Copyright Statement\n\n   Copyright (C) The Internet Society (2005).\n\n   This
+        document is subject to the rights, licenses and restrictions\n   contained
+        in BCP 78, and except as set forth therein, the authors\n   retain all their
+        rights.\n\n   This document and the information contained herein are provided
+        on an\n   \"AS IS\" basis and THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS\n
+        \  OR IS SPONSORED BY (IF ANY), THE INTERNET SOCIETY AND THE INTERNET\n   ENGINEERING
+        TASK FORCE DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED,\n   INCLUDING BUT
+        NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE\n   INFORMATION HEREIN WILL
+        NOT INFRINGE ANY RIGHTS OR ANY IMPLIED\n   WARRANTIES OF MERCHANTABILITY OR
+        FITNESS FOR A PARTICULAR PURPOSE.\n\nIntellectual Property\n\n   The IETF
+        takes no position regarding the validity or scope of any\n   Intellectual
+        Property Rights or other rights that might be claimed to\n   pertain to the
+        implementation or use of the technology described in\n   this document or
+        the extent to which any license under such rights\n   might or might not be
+        available; nor does it represent that it has\n   made any independent effort
+        to identify any such rights.  Information\n   on the procedures with respect
+        to rights in RFC documents can be\n   found in BCP 78 and BCP 79.\n\n   Copies
+        of IPR disclosures made to the IETF Secretariat and any\n   assurances of
+        licenses to be made available, or the result of an\n   attempt made to obtain
+        a general license or permission for the use of\n   such proprietary rights
+        by implementers or users of this\n   specification can be obtained from the
+        IETF on-line IPR repository at\n   http://www.ietf.org/ipr.\n\n   The IETF
+        invites any interested party to bring to its attention any\n   copyrights,
+        patents or patent applications, or other proprietary\n   rights that may cover
+        technology that may be required to implement\n   this standard.  Please address
+        the information to the IETF at ietf-\n   ipr@ietf.org.\n\nAcknowledgement\n\n
+        \  Funding for the RFC Editor function is currently provided by the\n   Internet
+        Society.\n\n\n\n\n\n\n\nShafranovich                 Informational                      [Page
+        8]\n\f\n"
+  recorded_at: Thu, 19 Sep 2024 20:46:45 GMT
+recorded_with: VCR 6.3.1

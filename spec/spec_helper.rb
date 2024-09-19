@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require "tmpdir"
 require "rfc_reader"
 require "rspec/snapshot"
 require "vcr"
@@ -108,6 +109,22 @@ RSpec.configure do |config|
   #
   # Set this value to put all snapshots in a fixed directory
   config.snapshot_dir = "spec/fixtures/snapshots"
+
+  # Extra set up to make sure we don't overwrite the default XDG directory files.
+  config.around(:each, :setup_xdg_dirs) do |example|
+    Dir.mktmpdir("rfc-reader-tests-") do |temp_dir|
+      ENV["XDG_CACHE_HOME"] = temp_dir
+      example.run
+    end
+  end
+
+  # TODO: Figure out why this wasn't printing to stdout in the first place when passing
+  # in 'enabled: false' to the `TTY::Pager.page` method.
+  config.before do
+    allow(RfcReader::Terminal).to receive(:page).and_wrap_original do |_method, *args|
+      puts args.first
+    end
+  end
 end
 
 RSpec::Matchers.define_negated_matcher :not_to_output, :output
