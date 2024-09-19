@@ -84,4 +84,34 @@ RSpec.describe RfcReader::Command do
         .to match_snapshot("rfc-4180")
     end
   end
+
+  describe "#library", :setup_xdg_dirs do
+    let(:title) { "Common Format and MIME Type for Comma-Separated Values (CSV) Files" }
+    let(:path) { File.join(RfcReader::Library.library_cache_dir, "rfc4180.txt") }
+    let(:library_list) do
+      [
+        {
+          title: title,
+          url: "https://www.rfc-editor.org/rfc/rfc4180.txt",
+          path: path,
+        },
+      ]
+    end
+
+    before do
+      allow(RfcReader::Terminal)
+        .to receive(:choose)
+        .with("Choose an RFC to read:", array_including(title))
+        .and_return(title)
+
+      FileUtils.mkdir_p(RfcReader::Library.library_cache_dir)
+      File.write(RfcReader::Library.library_cache_list_path, JSON.pretty_generate(library_list))
+      FileUtils.cp(fixture("rfc4180.txt"), path)
+    end
+
+    it "lists downloaded RFCs and shows the chosen one" do
+      expect { described_class.start(%w[library]) }
+        .to output(snapshot("rfc-4180")).to_stdout
+    end
+  end
 end

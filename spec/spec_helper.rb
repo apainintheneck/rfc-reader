@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require "fileutils"
+require "json"
 require "tmpdir"
 require "rfc_reader"
 require "rspec/snapshot"
@@ -133,4 +135,9 @@ VCR.configure do |config|
   config.default_cassette_options = { drop_unused_requests: true }
   config.cassette_library_dir = "spec/fixtures/cassettes"
   config.hook_into :webmock
+end
+
+def fixture(relative_path)
+  path = File.join(__dir__, "fixtures", relative_path)
+  File.expand_path(path)
 end

@@ -1,0 +1,42 @@
+[
+  {
+    "title": "URI Fragment Identifiers for the text/csv Media Type",
+    "url": "https://www.rfc-editor.org/rfc/rfc7111.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc7111.txt"
+  },
+  {
+    "title": "Common Format and MIME Type for Comma-Separated Values (CSV) Files",
+    "url": "https://www.rfc-editor.org/rfc/rfc4180.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc4180.txt"
+  },
+  {
+    "title": "RFC 9605: Secure Frame (SFrame): Lightweight Authenticated Encryption for Real-Time Media",
+    "url": "https://www.rfc-editor.org/rfc/rfc9605.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc9605.txt"
+  },
+  {
+    "title": "RFC 9616: Delay-Based Metric Extension for the Babel Routing Protocol",
+    "url": "https://www.rfc-editor.org/rfc/rfc9616.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc9616.txt"
+  },
+  {
+    "title": "TCP Usage Guidance in the Internet of Things (IoT)",
+    "url": "https://www.rfc-editor.org/rfc/rfc9006.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc9006.txt"
+  },
+  {
+    "title": " RPC: Remote Procedure Call Protocol specification: Version 2 ",
+    "url": "https://www.rfc-editor.org/rfc/rfc1050.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc1050.txt"
+  },
+  {
+    "title": "RFC 9637: Expanding the IPv6 Documentation Space",
+    "url": "https://www.rfc-editor.org/rfc/rfc9637.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc9637.txt"
+  },
+  {
+    "title": "RFC 9600: TRansparent Interconnection of Lots of Links (TRILL): Explicit Congestion Notification (ECN) Support",
+    "url": "https://www.rfc-editor.org/rfc/rfc9600.txt",
+    "path": "/Users/kevinrobell/.cache/rfc_reader/library/rfc9600.txt"
+  }
+]
