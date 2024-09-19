@@ -38,14 +38,14 @@ module RfcReader
     def self.parse(xml)
       Nokogiri::XML(xml).xpath("//item").to_h do |item|
         item_hash = item.elements.to_h do |elem|
-          [elem.name, elem.text]
+          [elem.name, elem.text.strip]
         end
 
         # The link is to the webpage and not the plaintext document so we must convert it.
-        file_name = File.basename(item_hash["link"])
+        file_name = File.basename(item_hash.fetch("link"))
 
         [
-          item_hash["title"],
+          item_hash.fetch("title"),
           "https://www.rfc-editor.org/rfc/#{file_name}.txt",
         ]
       end

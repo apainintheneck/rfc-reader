@@ -1,0 +1,5 @@
+{
+                          "Common Format and MIME Type for Comma-Separated Values (CSV) Files" => "https://www.rfc-editor.org/rfc/rfc4180.txt",
+                                        "URI Fragment Identifiers for the text/csv Media Type" => "https://www.rfc-editor.org/rfc/rfc7111.txt",
+  "TLS Fallback Signaling Cipher Suite Value (SCSV) for Preventing Protocol Downgrade Attacks" => "https://www.rfc-editor.org/rfc/rfc7507.txt"
+}

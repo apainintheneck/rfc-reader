@@ -73,12 +73,9 @@ module RfcReader
     def self.parse(html)
       # NOTE: The first element in the table is just some general search information. See example HTML above.
       Nokogiri::HTML(html).xpath("//div[@class='scrolltable']//table[@class='gridtable']//tr").drop(1).to_h do |tr_node|
-        title = tr_node.xpath("td[@class='title']").text
-        url = tr_node
-          .xpath("//td//a")
-          .find { |link_node| link_node.text == "ASCII" }
-          .attribute("href")
-          .text
+        td_nodes = tr_node.elements
+        title = td_nodes[2].text.strip
+        url = td_nodes[1].elements.map { _1.attribute("href").text.strip }.find { _1.end_with?(".txt") }
 
         [title, url]
       end
