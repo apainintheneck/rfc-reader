@@ -8,6 +8,7 @@ gemspec
 gem "rake"
 
 gem "rspec"
+gem "rspec-snapshot"
 
 gem "rubocop"
 gem "rubocop-rake"

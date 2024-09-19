@@ -1,0 +1,15 @@
+>>> rfc-reader
+
+This command downloads the plaintext version of RFCs from
+rfc-editor.org so that they can be read at the command line.
+
+The last 100 downloaded RFCs are saved locally so that they can be
+read later on without the need for an internet connection.
+
+Commands:
+  rspec help [COMMAND]  # Describe available commands or one specific command
+  rspec library         # List already downloaded RFCs for reading
+  rspec recent          # List recent RFC releases for reading
+  rspec search [TERM]   # Search for RFCs by TERM for reading
+  rspec version         # Print the program version
+
