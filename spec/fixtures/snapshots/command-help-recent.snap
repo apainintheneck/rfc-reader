@@ -4,4 +4,5 @@ Usage:
 Description:
   Fetch the most recent 15 RFCs on rfc-editor.org and list them.
 
-  Choose any RFC from the list that seems interesting and it will get downloaded so that you can read it in your terminal.
+  Choose any RFC from the list that seems interesting and it will get
+  downloaded so that you can read it in your terminal.

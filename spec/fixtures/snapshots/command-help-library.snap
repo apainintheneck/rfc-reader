@@ -4,4 +4,5 @@ Usage:
 Description:
   List the last 100 RFCs that have already been downloaded.
 
-  Choose any RFC from the list that seems interesting and you can read it offline in your terminal.
+  Choose any RFC from the list that seems interesting and you can read it
+  offline in your terminal.

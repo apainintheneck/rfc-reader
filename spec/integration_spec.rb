@@ -23,14 +23,35 @@ RSpec.describe "integration tests" do
     it "returns the expected result" do
       Open3.popen2(exe_path, "recent") do |input, output|
         input.puts enter_key
-        result = output.read
-
-        expect(result)
+        expect(output.read)
           .to include("Request for Comments:")
           .and include("Status of This Memo")
           .and include("Copyright Notice")
           .and include("Table of Contents")
           .and include("1.  Introduction")
+      end
+    end
+  end
+
+  describe "help" do
+    it "returns the default help page", :aggregate_failures do
+      Open3.popen2(exe_path) do |_input, output|
+        expect(output.read).to match_snapshot("command-help")
+      end
+      Open3.popen2(exe_path, "help") do |_input, output|
+        expect(output.read).to match_snapshot("command-help")
+      end
+    end
+
+    it "shows the subcommand help page", :aggregate_failures do
+      Open3.popen2(exe_path, "help", "recent") do |_input, output|
+        expect(output.read).to match_snapshot("command-help-recent")
+      end
+      Open3.popen2(exe_path, "help", "library") do |_input, output|
+        expect(output.read).to match_snapshot("command-help-library")
+      end
+      Open3.popen2(exe_path, "help", "search") do |_input, output|
+        expect(output.read).to match_snapshot("command-help-search")
       end
     end
   end
