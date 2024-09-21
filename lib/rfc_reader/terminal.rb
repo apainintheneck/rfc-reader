@@ -12,9 +12,15 @@ module RfcReader
     # @param choices [Array<String>] where all choices are unique
     def self.choose(prompt, choices)
       require "tty-prompt"
-      TTY::Prompt.new.select(prompt, choices)
-    rescue TTY::Reader::InputInterrupt
-      exit # We want people to be able to control-C out of this prompt.
+      TTY::Prompt
+        .new(
+          quiet: true,
+          track_history: false,
+          interrupt: :exit,
+          symbols: { marker: ">" },
+          enable_color: !ENV["NO_COLOR"]
+        )
+        .select(prompt, choices)
     end
   end
 end

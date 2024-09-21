@@ -12,7 +12,7 @@ RSpec.describe "integration tests" do
 
   describe "search", :online do
     it "returns the expected result" do
-      Open3.popen2(exe_path, "search", "4180") do |input, output|
+      Open3.popen2({ "NO_COLOR" => "1" }, exe_path, "search", "4180") do |input, output|
         input.puts enter_key
         expect(output.read).to match_snapshot("online-search")
       end
@@ -21,7 +21,7 @@ RSpec.describe "integration tests" do
 
   describe "recent", :online do
     it "returns the expected result" do
-      Open3.popen2(exe_path, "recent") do |input, output|
+      Open3.popen2({ "NO_COLOR" => "1" }, exe_path, "recent") do |input, output|
         input.puts enter_key
         expect(output.read)
           .to include("Request for Comments:")
