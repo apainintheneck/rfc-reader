@@ -7,9 +7,9 @@ The last 100 downloaded RFCs are saved locally so that they can be
 read later on without the need for an internet connection.
 
 Commands:
-  rspec help [COMMAND]  # Describe available commands or one specific command
-  rspec library         # List already downloaded RFCs for reading
-  rspec recent          # List recent RFC releases for reading
-  rspec search [TERM]   # Search for RFCs by TERM for reading
-  rspec version         # Print the program version
+  rfc-reader help [COMMAND]  # Describe available commands or one specific command
+  rfc-reader library         # List already downloaded RFCs for reading
+  rfc-reader recent          # List recent RFC releases for reading
+  rfc-reader search [TERM]   # Search for RFCs by TERM for reading
+  rfc-reader version         # Print the program version
 

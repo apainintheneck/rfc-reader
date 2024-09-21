@@ -1,7 +1,8 @@
 Usage:
-  rspec search [TERM]
+  rfc-reader search [TERM]
 
 Description:
   Search for RFCs on rfc-editor.org by the given term and list them.
 
-  Choose any RFC from the list that seems interesting and it will get downloaded so that you can read it in your terminal.
+  Choose any RFC from the list that seems interesting and it will get
+  downloaded so that you can read it in your terminal.
