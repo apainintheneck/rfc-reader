@@ -1,5 +1,5 @@
 Usage:
-  rspec library
+  rfc-reader library
 
 Description:
   List the last 100 RFCs that have already been downloaded.

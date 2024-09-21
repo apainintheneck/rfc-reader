@@ -1,5 +1,5 @@
 Usage:
-  rspec search [TERM]
+  rfc-reader search [TERM]
 
 Description:
   Search for RFCs on rfc-editor.org by the given term and list them.

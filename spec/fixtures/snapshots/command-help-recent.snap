@@ -1,5 +1,5 @@
 Usage:
-  rspec recent
+  rfc-reader recent
 
 Description:
   Fetch the most recent 15 RFCs on rfc-editor.org and list them.
