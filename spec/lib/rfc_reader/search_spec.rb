@@ -3,7 +3,7 @@
 require "spec_helper"
 
 RSpec.describe RfcReader::Search do
-  describe "#search_by" do
+  describe ".search_by" do
     it "returns search for RFCs by term", :aggregate_failures do
       %w[csv http 9600].each do |term|
         VCR.use_cassette("search-by-#{term}") do

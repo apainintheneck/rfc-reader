@@ -13,9 +13,9 @@ module RfcReader
 
       # @param cause [StandardError]
       # @param context [String] (Optional)
-      def initialize(cause:, context: default_context)
+      def initialize(cause:, context: nil)
         @cause = cause
-        @context = context
+        @context = context || default_context
         super
       end
 
@@ -25,19 +25,31 @@ module RfcReader
 
       def full_message
         <<~MESSAGE
-          Context: #{context}
-          Error: #{cause.class}
+          Context: #{@context}
+          Error: #{@cause.class}
           Message:
-          #{message}
+          #{indent(message)}
           Backtrace:
-          #{bracktrace}
+          #{indent(backtrace)}
         MESSAGE
       end
 
       private
 
       def default_context
-        "#{cause.class}: #{message.lines.first}"
+        "#{@cause.class}: #{message.lines.first}"
+      end
+
+      def indent(string_or_array)
+        strings = case string_or_array
+                  when Array then string_or_array
+                  when String then string_or_array.lines
+                  else raise ArgumentError, "Expected string or array instead of #{string_or_array.class}"
+                  end
+
+        strings
+          .map { _1.prepend("   ") }
+          .join("\n")
       end
     end
 

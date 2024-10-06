@@ -15,7 +15,7 @@ RSpec.describe RfcReader::Command do
       VCR.use_cassette("command-recent") do
         expect { described_class.start(%w[recent]) }
           .to output(snapshot("rfc-9605")).to_stdout
-          .and not_to_output.to_stderr
+          .and not_output.to_stderr
       end
 
       catalog = RfcReader::Library.catalog
@@ -45,7 +45,7 @@ RSpec.describe RfcReader::Command do
       VCR.use_cassette("command-search-for-csv") do
         expect { described_class.start(%w[search csv]) }
           .to output(snapshot("rfc-4180")).to_stdout
-          .and not_to_output.to_stderr
+          .and not_output.to_stderr
       end
 
       catalog = RfcReader::Library.catalog
@@ -66,7 +66,7 @@ RSpec.describe RfcReader::Command do
       VCR.use_cassette("command-search-no-results") do
         expect { described_class.start(%w[search oath2]) }
           .to output("No search results for: oath2\n").to_stderr
-          .and not_to_output.to_stdout
+          .and not_output.to_stdout
       end
 
       expect(RfcReader::Library.catalog).to be_empty
@@ -104,13 +104,13 @@ RSpec.describe RfcReader::Command do
 
       expect { described_class.start(%w[library]) }
         .to output(snapshot("rfc-4180")).to_stdout
-        .and not_to_output.to_stderr
+        .and not_output.to_stderr
     end
 
     it "prints message when library is empty" do
       expect { described_class.start(%w[library]) }
         .to output(empty_library_message).to_stderr
-        .and not_to_output.to_stdout
+        .and not_output.to_stdout
     end
   end
 end
