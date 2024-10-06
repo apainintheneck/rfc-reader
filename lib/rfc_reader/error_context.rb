@@ -25,8 +25,10 @@ module RfcReader
 
       def full_message
         <<~MESSAGE
-          Context: #{@context}
-          Error: #{@cause.class}
+          Context:
+          #{indent(@context)}
+          Error:
+             #{@cause.class}
           Message:
           #{indent(message)}
           Backtrace:

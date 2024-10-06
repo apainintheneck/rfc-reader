@@ -47,8 +47,10 @@ RSpec.describe RfcReader::ErrorContext do
       it "handles custom error and returns non-zero exit code", :aggregate_failures do
         exit_code = nil
         short_message = <<~MESSAGE
-          Context: ArgumentError: Unexpected date argument...
-          Error: ArgumentError
+          Context:
+             ArgumentError: Unexpected date argument...
+          Error:
+             ArgumentError
           Message:
              Unexpected date argument...
           Backtrace:
@@ -67,8 +69,10 @@ RSpec.describe RfcReader::ErrorContext do
       it "handles context error and returns non-zero exit code", :aggregate_failures do
         exit_code = nil
         short_message = <<~MESSAGE
-          Context: Parsing date argument
-          Error: ArgumentError
+          Context:
+             Parsing date argument
+          Error:
+             ArgumentError
           Message:
              Unexpected date argument...
           Backtrace:
