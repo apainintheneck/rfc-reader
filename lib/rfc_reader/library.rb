@@ -16,7 +16,10 @@ module RfcReader
       file_name = File.basename(url)
       file_path = File.join(library_cache_dir, file_name)
 
-      content = Net::HTTP.get(URI(url))
+      content = ErrorContext.wrap("Downloading RFC document") do
+        Net::HTTP.get(URI(url))
+      end
+
       FileUtils.mkdir_p(library_cache_dir)
       File.write(file_path, content)
       add_to_catalog(title: title, url: url, path: file_path)

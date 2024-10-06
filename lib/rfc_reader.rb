@@ -8,4 +8,12 @@ module RfcReader
   autoload :Search, "rfc_reader/search"
   autoload :Terminal, "rfc_reader/terminal"
   autoload :Library, "rfc_reader/library"
+  autoload :ErrorContext, "rfc_reader/error_context"
+
+  # @return [Integer] exit code
+  def self.start
+    ErrorContext.handler do
+      Command.start
+    end
+  end
 end

@@ -18,7 +18,9 @@ module RfcReader
     # @param term [String]
     # @return [String] the raw HTML of the search results for the given term
     def self.fetch_by(term:)
-      Net::HTTP.post_form(RFC_SEARCH_URI, { combo_box: term }).body
+      ErrorContext.wrap("Fetching RFC search results") do
+        Net::HTTP.post_form(RFC_SEARCH_URI, { combo_box: term }).body
+      end
     end
 
     # Example: HTML fragment we're trying to parse title and link info from.
@@ -71,13 +73,23 @@ module RfcReader
     # @param html [String] the HTML of the search results
     # @return [Hash<String, String>] from RFC title to text file url
     def self.parse(html)
-      # NOTE: The first element in the table is just some general search information. See example HTML above.
-      Nokogiri::HTML(html).xpath("//div[@class='scrolltable']//table[@class='gridtable']//tr").drop(1).to_h do |tr_node|
-        td_nodes = tr_node.elements
-        title = td_nodes[2].text.strip
-        url = td_nodes[1].elements.map { _1.attribute("href").text.strip }.find { _1.end_with?(".txt") }
+      ErrorContext.wrap("Parsing RFC search results") do
+        # NOTE: The first element in the table is just some general search information. See example HTML above.
+        Nokogiri::HTML(html)
+          .xpath("//div[@class='scrolltable']//table[@class='gridtable']//tr")
+          .drop(1)
+          .to_h do |tr_node|
+            td_nodes = tr_node.elements
+            title = td_nodes[2]
+              .text
+              .strip
+            url = td_nodes[1]
+              .elements
+              .map { _1.attribute("href").text.strip }
+              .find { _1.end_with?(".txt") }
 
-        [title, url]
+            [title, url]
+          end
       end
     end
   end
