@@ -14,13 +14,12 @@ module RfcReader
       require "tty-prompt"
       TTY::Prompt
         .new(
-          quiet: true,
           track_history: false,
           interrupt: :exit,
           symbols: { marker: ">" },
           enable_color: !ENV["NO_COLOR"]
         )
-        .select(prompt, choices)
+        .select(prompt, choices, per_page: 15)
     end
   end
 end
