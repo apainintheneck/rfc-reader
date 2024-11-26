@@ -10,7 +10,7 @@ RSpec.describe RfcReader::Command do
       allow(RfcReader::Terminal)
         .to receive(:choose)
         .with("Choose an RFC to read:", array_including(title))
-        .and_return(title)
+        .and_yield(title)
 
       VCR.use_cassette("command-recent") do
         expect { described_class.start(%w[recent]) }
@@ -40,7 +40,7 @@ RSpec.describe RfcReader::Command do
       allow(RfcReader::Terminal)
         .to receive(:choose)
         .with("Choose an RFC to read:", array_including(title))
-        .and_return(title)
+        .and_yield(title)
 
       VCR.use_cassette("command-search-for-csv") do
         expect { described_class.start(%w[search csv]) }
@@ -96,7 +96,7 @@ RSpec.describe RfcReader::Command do
       allow(RfcReader::Terminal)
         .to receive(:choose)
         .with("Choose an RFC to read:", array_including(title))
-        .and_return(title)
+        .and_yield(title)
 
       FileUtils.mkdir_p(RfcReader::Library.library_cache_dir)
       File.write(RfcReader::Library.library_cache_list_path, JSON.pretty_generate(library_list))
