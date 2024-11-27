@@ -67,7 +67,13 @@ module RfcReader
       # @param choices [Array<String>] where all choices are unique
       # @return [String|nil]
       def select(message, choices)
-        choice = @prompt.select(message, choices, per_page: 15)
+        choice = @prompt.select(
+          message,
+          choices,
+          per_page: 15,
+          help: "(Press Enter to select and Escape to leave)",
+          show_help: :always
+        )
         choice unless @exit
       ensure
         @exit = false
