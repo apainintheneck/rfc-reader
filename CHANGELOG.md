@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+### Added
+
+- Add support for moving back to the selection menu after opening an RFC
+- Add support for exiting the selection menu gracefully with Escape or (q)
+- Add support for Vim navigation keybindings (h/j/k/l) in the selection menu
+
 ## [1.1.1] - 2024-10-05
 
 ### Added
