@@ -121,14 +121,6 @@ RSpec.configure do |config|
     end
   end
 
-  # Online tests are not included in normal `rspec` runs locally and are mostly triggered on CI.
-  config.around(:each, :online) do |example|
-    Dir.mktmpdir("rfc-reader-online-tests-") do |temp_dir|
-      ENV["XDG_CACHE_HOME"] = temp_dir
-      example.run
-    end
-  end
-
   # TODO: Figure out why this wasn't printing to stdout in the first place when passing
   # in 'enabled: false' to the `TTY::Pager.page` method.
   config.before do

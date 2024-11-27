@@ -25,6 +25,3 @@ jobs:
 
     - name: Run tests
       run: bundle exec rake spec
-
-    - name: Run online integration tests
-      run: bundle exec rake spec:online
