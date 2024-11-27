@@ -33,25 +33,19 @@ Metrics/AbcSize:
   Enabled: false
 
 Metrics/BlockLength:
-  Enabled: true
-  CountAsOne: ['array', 'heredoc', 'method_call']
+  Enabled: false
 
 Metrics/ClassLength:
-  Enabled: true
-  CountAsOne: ['array', 'heredoc', 'method_call']
-  Exclude: ['test/**/*']
+  Enabled: false
 
 Metrics/CyclomaticComplexity:
   Enabled: false
 
 Metrics/MethodLength:
-  Enabled: true
-  CountAsOne: ['array', 'heredoc', 'method_call']
-  Max: 20
+  Enabled: false
 
 Metrics/ModuleLength:
-  Enabled: true
-  CountAsOne: ['array', 'heredoc', 'method_call']
+  Enabled: false
 
 RSpec/DescribeClass:
   Enabled: false

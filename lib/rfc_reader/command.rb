@@ -49,10 +49,11 @@ module RfcReader
         warn "No search results for: #{term}"
         return FAILURE
       end
-      title = Terminal.choose("Choose an RFC to read:", search_results.keys)
-      url = search_results.fetch(title)
-      content = Library.download_document(title: title, url: url)
-      Terminal.page(content)
+      Terminal.choose("Choose an RFC to read:", search_results.keys) do |title|
+        url = search_results.fetch(title)
+        content = Library.download_document(title: title, url: url)
+        Terminal.page(content)
+      end
       SUCCESS
     end
 
@@ -70,10 +71,11 @@ module RfcReader
         warn "Error: Empty recent RFC list from rfc-editor.org RSS feed"
         return FAILURE
       end
-      title = Terminal.choose("Choose an RFC to read:", recent_results.keys)
-      url = recent_results.fetch(title)
-      content = Library.download_document(title: title, url: url)
-      Terminal.page(content)
+      Terminal.choose("Choose an RFC to read:", recent_results.keys) do |title|
+        url = recent_results.fetch(title)
+        content = Library.download_document(title: title, url: url)
+        Terminal.page(content)
+      end
       SUCCESS
     end
 
@@ -95,10 +97,11 @@ module RfcReader
         return FAILURE
       end
       all_titles = rfc_catalog.map { _1[:title] }
-      title = Terminal.choose("Choose an RFC to read:", all_titles)
-      rfc = rfc_catalog.find { _1[:title] == title }
-      content = Library.load_document(**rfc)
-      Terminal.page(content)
+      Terminal.choose("Choose an RFC to read:", all_titles) do |title|
+        rfc = rfc_catalog.find { _1[:title] == title }
+        content = Library.load_document(**rfc)
+        Terminal.page(content)
+      end
       SUCCESS
     end
 

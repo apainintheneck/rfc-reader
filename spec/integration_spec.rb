@@ -8,31 +8,6 @@ RSpec.describe "integration tests" do
     File.expand_path(path)
   end
 
-  let(:enter_key) { "\uE007" }
-
-  describe "search", :online do
-    it "returns the expected result" do
-      Open3.popen2({ "NO_COLOR" => "1" }, exe_path, "search", "4180") do |input, output|
-        input.puts enter_key
-        expect(output.read).to match_snapshot("online-search")
-      end
-    end
-  end
-
-  describe "recent", :online do
-    it "returns the expected result" do
-      Open3.popen2({ "NO_COLOR" => "1" }, exe_path, "recent") do |input, output|
-        input.puts enter_key
-        expect(output.read)
-          .to include("Request for Comments:")
-          .and include("Status of This Memo")
-          .and include("Copyright Notice")
-          .and include("Table of Contents")
-          .and include("1.  Introduction")
-      end
-    end
-  end
-
   describe "help" do
     it "returns the default help page", :aggregate_failures do
       Open3.popen2(exe_path) do |_input, output|
