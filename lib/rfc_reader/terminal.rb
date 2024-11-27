@@ -63,9 +63,9 @@ module RfcReader
         end
       end
 
-    # @param prompt [String]
-    # @param choices [Array<String>] where all choices are unique
-    # @return [String|nil]
+      # @param prompt [String]
+      # @param choices [Array<String>] where all choices are unique
+      # @return [String|nil]
       def select(message, choices)
         choice = @prompt.select(message, choices, per_page: 15)
         choice unless @exit
