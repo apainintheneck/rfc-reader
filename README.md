@@ -1,5 +1,7 @@
 # RfcReader
 
+[![Gem Version](https://badge.fury.io/rb/rfc-reader.svg)](https://badge.fury.io/rb/rfc-reader)
+
 This is a simple gem that makes it easy to find and read RFCs listed on `rfc-editor.com`.
 
 Note: This gem is not directly affiliated with `rfc-editor.com`. It's just a hobby project.
