@@ -10,10 +10,6 @@ Note: This gem is not directly affiliated with `rfc-editor.com`. It's just a hob
 gem install rfc-reader
 ```
 
-## Example
-
-![GIF showing usage of the command: rfc-reader search json](./assets/rfc-reader-1.1.1.cast.gif)
-
 ## Usage
 
 ```
@@ -32,6 +28,10 @@ Commands:
   rfc-reader search [TERM]   # Search for RFCs by TERM for reading
   rfc-reader version         # Print the program version
 ```
+
+## Demo
+
+![GIF showing usage of the command: rfc-reader search json](./assets/rfc-reader-1.1.1.cast.gif)
 
 ## Development
 
