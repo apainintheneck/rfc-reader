@@ -6,6 +6,10 @@
 - Add support for exiting the selection menu gracefully with Escape or (q)
 - Add support for Vim navigation keybindings (h/j/k/l) in the selection menu
 
+### Fixed
+
+- Fix support for recent RFC listing based on a different RSS feed
+
 ## [1.1.1] - 2024-10-05
 
 ### Added
