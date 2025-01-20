@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
 require "net/http"
-require "nokogiri"
+require "rss"
 
 module RfcReader
   module Recent
-    RECENT_RFCS_RSS_URI = URI("https://www.rfc-editor.org/rfcrss.xml").freeze
+    RECENT_RFCS_RSS_URI = URI("https://www.rfc-editor.org/rfcatom.xml").freeze
     private_constant :RECENT_RFCS_RSS_URI
 
     # @return [Hash<String, String>] from RFC title to text file url
@@ -39,16 +39,12 @@ module RfcReader
     # @return [Hash<String, String>] from RFC title to text file url
     def self.parse(xml)
       ErrorContext.wrap("Parsing the recent RFCs list") do
-        Nokogiri::XML(xml).xpath("//item").to_h do |item|
-          item_hash = item.elements.to_h do |elem|
-            [elem.name, elem.text.strip]
-          end
-
+        RSS::Parser.parse(xml).items.to_h do |item|
           # The link is to the webpage and not the plaintext document so we must convert it.
-          file_name = File.basename(item_hash.fetch("link"))
+          file_name = File.basename(item.link.href)
 
           [
-            item_hash.fetch("title"),
+            item.title.content,
             "https://www.rfc-editor.org/rfc/#{file_name}.txt",
           ]
         end

@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://www.rfc-editor.org/rfcrss.xml
+    uri: https://www.rfc-editor.org/rfcatom.xml
     body:
       encoding: US-ASCII
       string: ''
@@ -21,17 +21,17 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 19 Sep 2024 19:12:04 GMT
+      - Mon, 20 Jan 2025 04:07:41 GMT
       Content-Type:
       - text/xml
       Content-Length:
-      - '12043'
+      - '13991'
       Connection:
       - keep-alive
       Last-Modified:
-      - Sat, 14 Sep 2024 00:59:37 GMT
+      - Fri, 17 Jan 2025 20:34:52 GMT
       Etag:
-      - '"2f0b-62209da9643d8-gzip"'
+      - '"36a7-62becd7c4797c-gzip"'
       Accept-Ranges:
       - bytes
       Vary:
@@ -49,156 +49,166 @@ http_interactions:
       Server:
       - cloudflare
       Cf-Ray:
-      - 8c5be29d0f90cfa8-SJC
+      - 904c32f1ea0667fe-SJC
       Alt-Svc:
       - h3=":443"; ma=86400
     body:
       encoding: ASCII-8BIT
-      string: "<?xml version=\"1.0\" encoding=\"UTF-8\" ?>\n<rss version=\"2.0\">\n\t<channel>\n\t\t<title>Recent
-        RFCs</title>\n\t\t<link>https://www.rfc-editor.org/</link>\n\t\t<description>Recently
-        published RFCs</description>\n\t\t<language>en-us</language>\n\t\t<lastBuildDate>Fri,
-        13 Sep 2024 17:59:37 -0700</lastBuildDate>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9594: Key Provisioning for Group Communication Using Authentication and Authorization
-        for Constrained Environments (ACE)</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9594</link>\n\t\t<description>This
-        document defines how to use the Authentication and Authorization\r\nfor Constrained
-        Environments (ACE) framework to distribute keying\r\nmaterial and configuration
-        parameters for secure group communication.\r\nCandidate group members that
-        act as Clients and are authorized to\r\njoin a group can do so by interacting
-        with a Key Distribution Center\r\n(KDC) acting as the Resource Server, from
-        which they obtain the\r\nkeying material to communicate with other group members.
-        While\r\ndefining general message formats as well as the interface and\r\noperations
-        available at the KDC, this document supports different\r\napproaches and protocols
-        for secure group communication. Therefore,\r\ndetails are delegated to separate
-        application profiles of this\r\ndocument as specialized instances that target
-        a particular group\r\ncommunication approach and define how communications
-        in the group are\r\nprotected. Compliance requirements for such application
-        profiles are\r\nalso specified.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9616: Delay-Based Metric Extension for the Babel Routing Protocol</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9616</link>\n\t\t<description>This
-        document defines an extension to the Babel routing protocol that\r\nmeasures
-        the round-trip time (RTT) between routers and makes it\r\npossible to prefer
-        lower-latency links over higher-latency ones.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9620: Guidelines for Human Rights Protocol and Architecture Considerations</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9620</link>\n\t\t<description>This
-        document sets guidelines for human rights considerations for\r\ndevelopers
-        working on network protocols and architectures, similar to\r\nthe work done
-        on the guidelines for privacy considerations (RFC\r\n6973). This is an updated
-        version of the guidelines for human rights\r\nconsiderations in RFC 8280.\r\n\r\nThis
-        document is a product of the Human Right Protocol Considerations\r\n(HRPC)
-        Research Group in the IRTF.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9569: The Application-Layer Traffic Optimization (ALTO) Transport Information
-        Publication Service (TIPS)</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9569</link>\n\t\t<description>&quot;Application-Layer
-        Traffic Optimization (ALTO) Protocol&quot; (RFC 7285)\r\nleverages HTTP/1.1
-        and is designed for the simple, sequential\r\nrequest-reply use case, in which
-        an ALTO client requests a sequence\r\nof information resources and the server
-        responds with the complete\r\ncontent of each resource, one at a time.\r\n\r\nRFC
-        8895, which describes ALTO incremental updates using Server-Sent\r\nEvents
-        (SSE), defines a multiplexing protocol on top of HTTP/1.x, so\r\nthat an ALTO
-        server can incrementally push resource updates to\r\nclients whenever monitored
-        network information resources change,\r\nallowing the clients to monitor multiple
-        resources at the same time.\r\nHowever, HTTP/2 and later versions already
-        support concurrent,\r\nnon-blocking transport of multiple streams in the same
-        HTTP\r\nconnection.\r\n\r\nTo take advantage of newer HTTP features, this
-        document introduces\r\nthe ALTO Transport Information Publication Service
-        (TIPS). TIPS uses\r\nan incremental RESTful design to give an ALTO client
-        the new\r\ncapability to explicitly and concurrently (in a non-blocking manner)\r\nrequest
-        (or pull) specific incremental updates using HTTP/2 or\r\nHTTP/3, while still
-        functioning for HTTP/1.1.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9624: EVPN Broadcast, Unknown Unicast, or Multicast (BUM) Using Bit Index
-        Explicit Replication (BIER)</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9624</link>\n\t\t<description>This
-        document specifies protocols and procedures for forwarding\r\nBroadcast, Unknown
-        Unicast, or Multicast (BUM) traffic of Ethernet\r\nVPNs (EVPNs) using Bit
-        Index Explicit Replication (BIER).</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9625: EVPN Optimized Inter-Subnet Multicast (OISM) Forwarding</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9625</link>\n\t\t<description>Ethernet
-        VPN (EVPN) provides a service that allows a single Local\r\nArea Network (LAN),
-        comprising a single IP subnet, to be divided into\r\nmultiple segments.  Each
-        segment may be located at a different site,\r\nand the segments are interconnected
-        by an IP or MPLS backbone. \r\nIntra-subnet traffic (either unicast or multicast)
-        always appears to\r\nthe end users to be bridged, even when it is actually
-        carried over\r\nthe IP or MPLS backbone.  When a single tenant owns multiple
-        such\r\nLANs, EVPN also allows IP unicast traffic to be routed between those\r\nLANs.
-        \ This document specifies new procedures that allow inter-subnet\r\nIP multicast
-        traffic to be routed among the LANs of a given tenant\r\nwhile still making
-        intra-subnet IP multicast traffic appear to be\r\nbridged.  These procedures
-        can provide optimal routing of the\r\ninter-subnet multicast traffic and do
-        not require any such traffic to\r\negress a given router and then ingress
-        that same router.  These\r\nprocedures also accommodate IP multicast traffic
-        that originates or\r\nis destined to be external to the EVPN domain.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9600: TRansparent Interconnection of Lots of Links (TRILL): Explicit Congestion
-        Notification (ECN) Support</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9600</link>\n\t\t<description>Explicit
-        Congestion Notification (ECN) allows a forwarding element to\r\nnotify downstream
-        devices, including the destination, of the onset of\r\ncongestion without
-        having to drop packets. This can improve network\r\nefficiency through better
-        congestion control without packet drops.\r\nThis document extends ECN to TRansparent
-        Interconnection of Lots of\r\nLinks (TRILL) switches, including integration
-        with IP ECN, and\r\nprovides for ECN marking in the TRILL header extension
-        flags word\r\n(RFC 7179).</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9601: Propagating Explicit Congestion Notification across IP Tunnel Headers
-        Separated by a Shim</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9601</link>\n\t\t<description>RFC
-        6040 on &quot;Tunnelling of Explicit Congestion Notification&quot; made the\r\nrules
-        for propagation of Explicit Congestion Notification (ECN)\r\nconsistent for
-        all forms of IP-in-IP tunnel. This specification\r\nupdates RFC 6040 to clarify
-        that its scope includes tunnels where two\r\nIP headers are separated by at
-        least one shim header that is not\r\nsufficient on its own for wide-area packet
-        forwarding. It surveys\r\nwidely deployed IP tunnelling protocols that use
-        such shim headers\r\nand updates the specifications of those that do not mention
-        ECN\r\npropagation (including RFCs 2661, 3931, 2784, 4380 and 7450, which\r\nspecify
-        L2TPv2, L2TPv3, Generic Routing Encapsulation (GRE), Teredo,\r\nand Automatic
-        Multicast Tunneling (AMT), respectively). This\r\nspecification also updates
-        RFC 6040 with configuration requirements\r\nneeded to make any legacy tunnel
-        ingress safe.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC 9599:
-        Guidelines for Adding Congestion Notification to Protocols that Encapsulate
-        IP</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9599</link>\n\t\t<description>The
-        purpose of this document is to guide the design of congestion\r\nnotification
-        in any lower-layer or tunnelling protocol that\r\nencapsulates IP. The aim
-        is for explicit congestion signals to\r\npropagate consistently from lower-layer
-        protocols into IP. Then, the\r\nIP internetwork layer can act as a portability
-        layer to carry\r\ncongestion notification from non-IP-aware congested nodes
-        up to the\r\ntransport layer (L4). Specifications that follow these guidelines,\r\nwhether
-        produced by the IETF or other standards bodies,  should\r\nassure interworking
-        among IP-layer and lower-layer congestion\r\nnotification mechanisms. This
-        document is included in BCP 89 and\r\nupdates the single paragraph of advice
-        to subnetwork designers about\r\nExplicit Congestion Notification (ECN) in
-        Section 13 of RFC 3819 by\r\nreplacing it with a reference to this document.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9618: Updates to X.509 Policy Validation</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9618</link>\n\t\t<description>This
-        document updates RFC 5280 to replace the algorithm for X.509\r\npolicy validation
-        with an equivalent, more efficient algorithm. The\r\noriginal algorithm built
-        a structure that scaled exponentially in the\r\nworst case, leaving implementations
-        vulnerable to denial-of-service\r\nattacks.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9588: Kerberos Simple Password-Authenticated Key Exchange (SPAKE) Pre-authentication</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9588</link>\n\t\t<description>This
-        document defines a new pre-authentication mechanism for the\r\nKerberos protocol.
-        \ The mechanism uses a password-authenticated key\r\nexchange (PAKE) to prevent
-        brute-force password attacks, and it may\r\nincorporate a second factor.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9617: A YANG Data Model for In Situ Operations, Administration, and Maintenance
-        (IOAM)</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9617</link>\n\t\t<description>In
-        situ Operations, Administration, and Maintenance (IOAM) is an\r\nexample of
-        an on-path hybrid measurement method. IOAM defines a\r\nmethod for producing
-        operational and telemetry information that may\r\nbe exported using the in-band
-        or out-of-band method. RFCs 9197 and\r\n9326 discuss the data fields and associated
-        data types for IOAM. This\r\ndocument defines a YANG module for the configuration
-        of IOAM\r\nfunctions.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9605: Secure Frame (SFrame): Lightweight Authenticated Encryption for Real-Time
-        Media</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9605</link>\n\t\t<description>This
-        document describes the Secure Frame (SFrame) end-to-end\r\nencryption and
-        authentication mechanism for media frames in a\r\nmultiparty conference call,
-        in which central media servers (Selective\r\nForwarding Units or SFUs) can
-        access the media metadata needed to\r\nmake forwarding decisions without having
-        access to the actual media.\r\n\r\nThis mechanism differs from the Secure
-        Real-Time Protocol (SRTP) in\r\nthat it is independent of RTP (thus compatible
-        with non-RTP media\r\ntransport) and can be applied to whole media frames
-        in order to be\r\nmore bandwidth efficient.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9630: Multicast On-Path Telemetry Using In Situ Operations, Administration,
-        and Maintenance (IOAM)</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9630</link>\n\t\t<description>This
-        document specifies two solutions to meet the requirements of\r\non-path telemetry
-        for multicast traffic using IOAM.  While IOAM is\r\nadvantageous for multicast
-        traffic telemetry, some unique challenges\r\nare present.  This document provides
-        the solutions based on the IOAM\r\ntrace option and direct export option to
-        support the telemetry data\r\ncorrelation and the multicast tree reconstruction
-        without incurring\r\ndata redundancy.</description>\n\t</item>\r\n\t\t\t<item>\n\t\t<title>RFC
-        9637: Expanding the IPv6 Documentation Space</title>\n\t\t<link>https://www.rfc-editor.org/info/rfc9637</link>\n\t\t<description>The
-        document describes the reservation of an additional IPv6 address\r\nprefix
-        for use in documentation. This update to RFC 3849 expands on\r\nthe existing
-        2001:db8::/32 address block with the reservation of an\r\nadditional, larger
-        prefix.  The addition of a /20 prefix allows\r\ndocumented examples to more
-        closely reflect a broader range of\r\nrealistic, current deployment scenarios
-        and more closely aligns with\r\ncontemporary allocation models for large networks.</description>\n\t</item>\r\n\t\t</channel>\n</rss>"
-  recorded_at: Thu, 19 Sep 2024 19:12:04 GMT
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n         <feed xmlns=\"http://www.w3.org/2005/Atom\">\n\t<title>Recent
+        RFCs</title>\n\t<subtitle>Recently published RFCs</subtitle>\n\t<link href=\"https://www.rfc-editor.org/\"
+        rel=\"self\"/><updated>2025-01-17T12:34:52-08:00</updated>\n\t<author>\n\t
+        \   <name>RFC Editor</name>\n\t</author>\n\t<id>https://www.rfc-editor.org</id>\t\t\t<entry>\n\t\t<title>RFC
+        9706: TreeDN: Tree-Based Content Delivery Network (CDN) for Live Streaming
+        to Mass Audiences</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9706\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9706</id>\n\n\t\t<updated>2025-01-17T00:00:00-08:00</updated>\n\t\t<summary>As
+        Internet audience sizes for high-interest live events reach\r\nunprecedented
+        levels and bitrates climb to support formats and\r\napplications such as 4K,
+        8K, and  Augmented Reality (AR), live\r\nstreaming can place a unique type
+        of stress upon network resources. \r\nTreeDN is a tree-based Content Delivery
+        Network (CDN) architecture\r\ndesigned to address the distinctive scaling
+        challenges of live\r\nstreaming to mass audiences. TreeDN enables operators
+        to offer\r\nReplication-as-a-Service (RaaS) at a fraction of the cost of\r\ntraditional,
+        unicast-based CDNs -- in some cases, at no additional\r\ncost to the infrastructure.
+        \ In addition to efficiently utilizing\r\nnetwork resources to deliver existing
+        multi-destination traffic, this\r\narchitecture also enables new types of
+        content and use cases that\r\npreviously were not possible or economically
+        viable using traditional\r\nCDN approaches.  Finally, TreeDN is a decentralized
+        architecture and\r\na democratizing technology that makes content distribution
+        more\r\naccessible to more people by dramatically reducing the costs of\r\nreplication.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9693: Benchmarking Methodology for Stateful NATxy Gateways</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9693\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9693</id>\n\n\t\t<updated>2025-01-10T00:00:00-08:00</updated>\n\t\t<summary>RFC
+        2544 defines a benchmarking methodology for network interconnect\r\ndevices.
+        RFC 5180 addresses IPv6 specificities, and it also provides\r\na technology
+        update but excludes IPv6 transition technologies. RFC\r\n8219 addresses IPv6
+        transition technologies, including stateful\r\nNAT64. However, none of them
+        discuss how to apply pseudorandom port\r\nnumbers from RFC 4814 to any stateful
+        NATxy (such as NAT44, NAT64,\r\nand NAT66) technologies.  This document discusses
+        why using\r\npseudorandom port numbers with stateful NATxy gateways is a difficult\r\nproblem.
+        It recommends a solution that limits the port number ranges\r\nand uses two
+        test phases (phase 1 and phase 2). This document shows\r\nhow the classic
+        performance measurement procedures (e.g., throughput,\r\nframe loss rate,
+        latency, etc.)  can be carried out.  New performance\r\nmetrics and measurement
+        procedures are also defined for measuring the\r\nmaximum connection establishment
+        rate, connection tear-down rate, and\r\nconnection tracking table capacity.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9702: YANG Data Model for Maximum Segment Identifier (SID) Depth (MSD) Types
+        and MPLS MSD</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9702\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9702</id>\n\n\t\t<updated>2025-01-10T00:00:00-08:00</updated>\n\t\t<summary>This
+        document defines two YANG modules.  The first module is the\r\ninitial version
+        of the IANA-maintained YANG module for Maximum\r\nSegment Identifier (SID)
+        Depth (MSD) Types, which includes identities\r\nfor both the MPLS data plane
+        and Segment Routing over IPv6 (SRv6)\r\ndata plane.  The second module augments
+        the IETF MPLS YANG data model\r\nto provide support for MPLS MSDs as defined
+        in RFCs 8476 and 8491.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9709: Encryption Key Derivation in the Cryptographic Message Syntax (CMS)
+        Using HKDF with SHA-256</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9709\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9709</id>\n\n\t\t<updated>2025-01-10T00:00:00-08:00</updated>\n\t\t<summary>This
+        document specifies the derivation of the content-encryption key\r\nor the
+        content-authenticated-encryption key in the Cryptographic\r\nMessage Syntax
+        (CMS) using the HMAC-based Extract-and-Expand Key\r\nDerivation Function (HKDF)
+        with SHA-256. The use of this mechanism\r\nprovides protection against an
+        attacker that manipulates the\r\ncontent-encryption algorithm identifier or
+        the\r\ncontent-authenticated-encryption algorithm identifier.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9708: Use of the HSS/LMS Hash-Based Signature Algorithm in the Cryptographic
+        Message Syntax (CMS)</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9708\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9708</id>\n\n\t\t<updated>2025-01-10T00:00:00-08:00</updated>\n\t\t<summary>This
+        document specifies the conventions for using the Hierarchical\r\nSignature
+        System (HSS) / Leighton-Micali Signature (LMS) hash-based\r\nsignature algorithm
+        with the Cryptographic Message Syntax (CMS).  In\r\naddition, the algorithm
+        identifier and public key syntax are\r\nprovided.  The HSS/LMS algorithm is
+        one form of hash-based digital\r\nsignature; it is described in RFC 8554.
+        \ This document obsoletes RFC\r\n8708.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9699: Use Case for an Extended Reality Application on Edge Computing Infrastructure</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9699\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9699</id>\n\n\t\t<updated>2024-12-28T00:00:00-08:00</updated>\n\t\t<summary>This
+        document explores the issues involved in the use of edge\r\ncomputing resources
+        to operationalize a media use case that involves\r\nan Extended Reality (XR)
+        application. In particular, this document\r\ndiscusses an XR application that
+        can run on devices having different\r\nform factors (such as different physical
+        sizes and shapes) and needs\r\nedge computing resources to mitigate the effect
+        of problems such as\r\nthe need to support interactive communication requiring
+        low latency,\r\nlimited battery power, and heat dissipation from those devices.
+        \ This\r\ndocument also discusses the expected behavior of XR applications,\r\nwhich
+        can be used to manage traffic, and the service requirements for\r\nXR applications
+        to be able to run on the network. Network operators\r\nwho are interested
+        in providing edge computing resources to\r\noperationalize the requirements
+        of such applications are the intended\r\naudience for this document.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9703: Label Switched Path (LSP) Ping/Traceroute for Segment Routing (SR) Egress
+        Peer Engineering (EPE) Segment Identifiers (SIDs) with MPLS Data Plane</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9703\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9703</id>\n\n\t\t<updated>2024-12-28T00:00:00-08:00</updated>\n\t\t<summary>Egress
+        Peer Engineering (EPE) is an application of Segment Routing\r\n(SR) that solves
+        the problem of egress peer selection.  The SR-based\r\nBGP-EPE solution allows
+        a centralized controller, e.g., a\r\nSoftware-Defined Network (SDN) controller,
+        to program any egress\r\npeer. The EPE solution requires the node or the SDN
+        controller to\r\nprogram 1) the PeerNode Segment Identifier (SID) describing
+        a session\r\nbetween two nodes, 2) the PeerAdj SID describing the link or
+        links\r\nthat are used by the sessions between peer nodes, and 3) the PeerSet\r\nSID
+        describing any connected interface to any peer in the related\r\ngroup. This
+        document provides new sub-TLVs for EPE-SIDs that are used\r\nin the Target
+        FEC Stack TLV (Type 1) in MPLS Ping and Traceroute\r\nprocedures.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9672: Transferring Opportunistic Wireless Encryption to the IEEE 802.11 Working
+        Group</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9672\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9672</id>\n\n\t\t<updated>2024-12-28T00:00:00-08:00</updated>\n\t\t<summary>RFC
+        8110 describes Opportunistic Wireless Encryption (OWE), a mode\r\nthat allows
+        unauthenticated clients to connect to a network using\r\nencrypted traffic.
+        This document transfers the ongoing maintenance\r\nand further development
+        of the protocol to the IEEE 802.11 Working\r\nGroup.\r\n\r\nThis document
+        updates RFC 8110 by noting that future work on the\r\nprotocol described therein
+        will occur in the IEEE 802.11 Working\r\nGroup.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9679: CBOR Object Signing and Encryption (COSE) Key Thumbprint</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9679\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9679</id>\n\n\t\t<updated>2024-12-20T00:00:00-08:00</updated>\n\t\t<summary>This
+        specification defines a method for computing a hash value over a\r\nCBOR Object
+        Signing and Encryption (COSE) Key. It specifies which\r\nfields within the
+        COSE Key structure are included in the\r\ncryptographic hash computation,
+        the process for creating a canonical\r\nrepresentation of these fields, and
+        how to hash the resulting byte\r\nsequence. The resulting hash value, referred
+        to as a &quot;thumbprint&quot;,\r\ncan be used to identify or select the corresponding
+        key.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC 9639: Free Lossless
+        Audio Codec (FLAC)</title>\n\t\t<link type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9639\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9639</id>\n\n\t\t<updated>2024-12-18T00:00:00-08:00</updated>\n\t\t<summary>This
+        document defines the Free Lossless Audio Codec (FLAC) format and\r\nits streamable
+        subset. FLAC is designed to reduce the amount of\r\ncomputer storage space
+        needed to store digital audio signals. It does\r\nthis losslessly, i.e., it
+        does so without losing information. FLAC is\r\nfree in the sense that its
+        specification is open and its reference\r\nimplementation is open source.
+        Compared to other lossless audio\r\ncoding formats, FLAC is a format with
+        low complexity and can be\r\nencoded and decoded with little computing resources.
+        Decoding of FLAC\r\nhas been implemented independently for many different
+        platforms, and\r\nboth encoding and decoding can be implemented without needing\r\nfloating-point
+        arithmetic.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC 9691: A
+        Profile for Resource Public Key Infrastructure (RPKI) Trust Anchor Keys (TAKs)</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9691\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9691</id>\n\n\t\t<updated>2024-12-18T00:00:00-08:00</updated>\n\t\t<summary>A
+        Trust Anchor Locator (TAL) is used by Relying Parties (RPs) in the\r\nResource
+        Public Key Infrastructure (RPKI) to locate and validate a\r\nTrust Anchor
+        (TA) Certification Authority (CA) certificate used in\r\nRPKI validation.
+        This document defines an RPKI signed object for a\r\nTrust Anchor Key (TAK).
+        \ A TAK object can be used by a TA to signal\r\nto RPs the location(s) of
+        the accompanying CA certificate for the\r\ncurrent public key, as well as
+        the successor public key and the\r\nlocation(s) of its CA certificate. This
+        object helps to support\r\nplanned key rollovers without impacting RPKI validation.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9610: JSON Meta Application Protocol (JMAP) for Contacts</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9610\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9610</id>\n\n\t\t<updated>2024-12-18T00:00:00-08:00</updated>\n\t\t<summary>This
+        document specifies a data model for synchronising contact data\r\nwith a server
+        using the JSON Meta Application Protocol (JMAP).</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9697: Detecting RPKI Repository Delta Protocol (RRDP) Session Desynchronization</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9697\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9697</id>\n\n\t\t<updated>2024-12-13T00:00:00-08:00</updated>\n\t\t<summary>This
+        document describes an approach for Resource Public Key\r\nInfrastructure (RPKI)
+        Relying Parties to detect a particular form of\r\nRPKI Repository Delta Protocol
+        (RRDP) session desynchronization and\r\nhow to recover. This document updates
+        RFC 8182.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC 9683: Remote
+        Integrity Verification of Network Devices Containing Trusted Platform Modules</title>\n\t\t<link
+        type=\"text/html\" href=\"https://www.rfc-editor.org/info/rfc9683\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9683</id>\n\n\t\t<updated>2024-12-06T00:00:00-08:00</updated>\n\t\t<summary>This
+        document describes a workflow for remote attestation of the\r\nintegrity of
+        firmware and software installed on network devices that\r\ncontain Trusted
+        Platform Modules (TPMs), as defined by the Trusted\r\nComputing Group (TCG),
+        or equivalent hardware implementations that\r\ninclude the protected capabilities,
+        as provided by TPMs.</summary>\n\t</entry>\r\n\t\t\t<entry>\n\t\t<title>RFC
+        9684: A YANG Data Model for Challenge-Response-Based Remote Attestation (CHARRA)
+        Procedures Using Trusted Platform Modules (TPMs)</title>\n\t\t<link type=\"text/html\"
+        href=\"https://www.rfc-editor.org/info/rfc9684\"/>\n\t\t<id>https://www.rfc-editor.org/info/rfc9684</id>\n\n\t\t<updated>2024-12-06T00:00:00-08:00</updated>\n\t\t<summary>This
+        document defines the YANG Remote Procedure Calls (RPCs) and\r\nconfiguration
+        nodes that are required to retrieve attestation\r\nevidence about integrity
+        measurements from a device, following the\r\noperational context defined in
+        RFC 9683 &quot;TPM-based Network Device\r\nRemote Integrity Verification&quot;.
+        Complementary measurement logs\r\noriginating from one or more Roots of Trust
+        for Measurement (RTMs)\r\nare also provided by the YANG RPCs.  The defined
+        module requires the\r\ninclusion of the following in the device components
+        of the composite\r\ndevice on which the YANG server is running: at least one
+        Trusted\r\nPlatform Module (TPM) of either version 1.2 or 2.0 as well as a\r\ncorresponding
+        TPM Software Stack (TSS), or an equivalent hardware\r\nimplementation that
+        includes the protected capabilities as provided\r\nby TPMs as well as a corresponding
+        software stack.</summary>\n\t</entry>\r\n\t\t</feed>"
+  recorded_at: Mon, 20 Jan 2025 04:07:41 GMT
 recorded_with: VCR 6.3.1

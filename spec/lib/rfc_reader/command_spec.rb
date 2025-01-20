@@ -4,7 +4,7 @@ require "spec_helper"
 
 RSpec.describe RfcReader::Command do
   describe "#recent", :setup_xdg_dirs do
-    let(:title) { "RFC 9605: Secure Frame (SFrame): Lightweight Authenticated Encryption for Real-Time Media" }
+    let(:title) { "RFC 9706: TreeDN: Tree-Based Content Delivery Network (CDN) for Live Streaming to Mass Audiences" }
 
     it "downloads recent RFCs and shows the chosen one", :aggregate_failures do
       allow(RfcReader::Terminal)
@@ -14,7 +14,7 @@ RSpec.describe RfcReader::Command do
 
       VCR.use_cassette("command-recent") do
         expect { described_class.start(%w[recent]) }
-          .to output(snapshot("rfc-9605")).to_stdout
+          .to output(snapshot("rfc-9706")).to_stdout
           .and not_output.to_stderr
       end
 
@@ -22,14 +22,14 @@ RSpec.describe RfcReader::Command do
 
       expect(catalog).to match([
         {
-          path: end_with("library/rfc9605.txt"),
+          path: end_with("library/rfc9706.txt"),
           title: title,
-          url: "https://www.rfc-editor.org/rfc/rfc9605.txt",
+          url: "https://www.rfc-editor.org/rfc/rfc9706.txt",
         },
       ])
 
       expect(RfcReader::Library.load_document(**catalog.first))
-        .to match_snapshot("rfc-9605")
+        .to match_snapshot("rfc-9706")
     end
   end
 
