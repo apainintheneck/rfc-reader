@@ -1,5 +1,7 @@
 ## [Unreleased]
 
+## [1.2.0] - 2025-01-20
+
 ### Added
 
 - Add support for moving back to the selection menu after opening an RFC
