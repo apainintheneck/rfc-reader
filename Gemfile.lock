@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rfc-reader (1.1.1)
+    rfc-reader (1.2.0)
       nokogiri (~> 1.16)
       rss (~> 0.3)
       thor (~> 1.3)
