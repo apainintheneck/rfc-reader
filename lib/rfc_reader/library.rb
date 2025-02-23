@@ -72,7 +72,7 @@ module RfcReader
       rfc = {
         title: title,
         url: url,
-        path: path,
+        path: path
       }
 
       list = [rfc, *list]

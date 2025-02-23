@@ -45,7 +45,7 @@ module RfcReader
 
           [
             item.title.content,
-            "https://www.rfc-editor.org/rfc/#{file_name}.txt",
+            "https://www.rfc-editor.org/rfc/#{file_name}.txt"
           ]
         end
       end

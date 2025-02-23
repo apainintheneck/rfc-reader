@@ -19,7 +19,7 @@ module RfcReader
     # @return [String] the raw HTML of the search results for the given term
     def self.fetch_by(term:)
       ErrorContext.wrap("Fetching RFC search results") do
-        Net::HTTP.post_form(RFC_SEARCH_URI, { combo_box: term }).body
+        Net::HTTP.post_form(RFC_SEARCH_URI, {combo_box: term}).body
       end
     end
 

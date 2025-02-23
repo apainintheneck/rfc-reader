@@ -24,8 +24,8 @@ RSpec.describe RfcReader::Command do
         {
           path: end_with("library/rfc9706.txt"),
           title: title,
-          url: "https://www.rfc-editor.org/rfc/rfc9706.txt",
-        },
+          url: "https://www.rfc-editor.org/rfc/rfc9706.txt"
+        }
       ])
 
       expect(RfcReader::Library.load_document(**catalog.first))
@@ -54,8 +54,8 @@ RSpec.describe RfcReader::Command do
         {
           path: end_with("library/rfc4180.txt"),
           title: title,
-          url: "https://www.rfc-editor.org/rfc/rfc4180.txt",
-        },
+          url: "https://www.rfc-editor.org/rfc/rfc4180.txt"
+        }
       ])
 
       expect(RfcReader::Library.load_document(**catalog.first))
@@ -81,8 +81,8 @@ RSpec.describe RfcReader::Command do
         {
           title: title,
           url: "https://www.rfc-editor.org/rfc/rfc4180.txt",
-          path: path,
-        },
+          path: path
+        }
       ]
     end
     let(:empty_library_message) do
