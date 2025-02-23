@@ -139,7 +139,7 @@ RSpec.describe RfcReader::ErrorContext do
 
         expect do
           exit_code = described_class.handler do
-            { one: 1, two: 2 }
+            {one: 1, two: 2}
           end
         end.to not_output.to_stdout
           .and not_output.to_stderr

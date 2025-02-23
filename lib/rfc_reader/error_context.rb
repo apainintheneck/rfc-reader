@@ -44,10 +44,10 @@ module RfcReader
 
       def indent(string_or_array)
         strings = case string_or_array
-                  when Array then string_or_array
-                  when String then string_or_array.lines
-                  else raise ArgumentError, "Expected string or array instead of #{string_or_array.class}"
-                  end
+        when Array then string_or_array
+        when String then string_or_array.lines
+        else raise ArgumentError, "Expected string or array instead of #{string_or_array.class}"
+        end
 
         strings
           .map { _1.prepend("   ") }
@@ -64,7 +64,7 @@ module RfcReader
     # @return yielded block value
     def self.wrap(context)
       yield
-    rescue StandardError => e
+    rescue => e
       raise ContextError.new(cause: e, context: context)
     end
 
@@ -85,7 +85,7 @@ module RfcReader
         return result.respond_to?(:to_i) ? result.to_i : 0
       rescue ContextError => e
         error = e
-      rescue StandardError => e
+      rescue => e
         error = ContextError.new(cause: e)
       end
 
