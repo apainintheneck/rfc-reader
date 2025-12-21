@@ -68,7 +68,7 @@ GEM
       awesome_print (> 1.0.0)
       rspec (> 3.0.0)
     rspec-support (3.13.6)
-    rss (0.3.1)
+    rss (0.3.2)
       rexml
     rubocop (1.80.2)
       json (~> 2.3)
