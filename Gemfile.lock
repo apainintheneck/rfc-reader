@@ -15,7 +15,6 @@ GEM
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
     awesome_print (1.9.2)
-    base64 (0.2.0)
     bigdecimal (3.3.1)
     crack (1.0.1)
       bigdecimal
@@ -122,8 +121,7 @@ GEM
     tty-screen (0.8.2)
     unicode-display_width (2.6.0)
     unicode_utils (1.4.0)
-    vcr (6.3.1)
-      base64
+    vcr (6.4.0)
     webmock (3.25.2)
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
